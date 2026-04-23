@@ -319,6 +319,51 @@ main {
     font-size: 2.2em;
 }
 
+.gallery {
+        width: 80%;
+        flex-direction: row;
+        gap: 1em;
+        overflow-x: scroll;
+    }
+
+    .gallery .gallery-slide {
+        width: auto;
+        display: grid;
+        grid-gap: 1em;
+        padding: 0px;
+        flex: none;
+    }
+
+    .gallery .gallery-slide button {
+        width: 100%;
+    }
+
+    .gallery::-webkit-scrollbar {
+        display: none;
+    }
+
+    #next-btn,
+    #back-btn {
+        display: block;
+        cursor: pointer;
+        margin: auto 1em;
+        background: none;
+        border: none;
+    }
+
+    #next-btn img,
+    #back-btn img {
+        width: 1em;
+    }
+
+    .gallery-wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        margin: 2em auto;
+    }
+
 
 
 
