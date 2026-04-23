@@ -15,19 +15,27 @@
     src: url(website-media/Fonts/Jost-VariableFont_wght.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'Noto Serif JP';
+    src: url(website-media/Fonts/NotoSerifJP-SemiBold.ttf) format('truetype');
+}
+
 /* ===== ROOT VARIABLES ===== */
 :root {
     --main-font: 'Asap Condensed';
     --main-font-bold: 'Asap Condensed SemiBold';
     --secondary-font: 'Jost';
+    --japanese-font: 'Noto Serif JP';
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #111111;
+    background-color: #0A0A0A;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif; /* not final lol */
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -142,9 +150,13 @@ header.nav-open .nav-bar {
     color: white;
     text-align: center;
     font-size: 0.9em;
-    margin: 0 5em;
+    margin: 0 5.5em;
     padding: 2em 0;
     font-family: var(--secondary-font), sans-serif;
+}
+
+#extra-header-text {
+    display: none;
 }
 
 .overlay-cont img {
@@ -164,24 +176,59 @@ header.nav-open .nav-bar {
     background-color: black;
     border: none;
     color: white;
+    transition: ease 0.3s;
+}
+
+#menu-header-button:hover {
+    background-color: hsl(0, 0%, 20%);
 }
 
 #book-header-button {
     box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
     border: none;
+    transition: ease 0.3s;
 }
 
+#book-header-button:hover {
+    background-color: hsl(0, 0%, 80%);
+}
 
+/* ===== MAIN STYLING ===== */
 
+main {
+    display: grid;
+}
+
+#japanese-promotions-text {
+    font-family: var(--japanese-font), sans-serif;
+    color: #959595;
+    z-index: 50;
+    font-size: 2.5em;
+    text-align: center;
+    margin: -1em 0 0 0;
+}
+
+.promotions-cont {
+    background-color: #0A0A0A;
+    color: white;
+    text-align: center;
+    font-family: var(--main-font-bold), sans-serif;
+}
+
+.promotions-cont h1 {
+    font-size: 2.2em;
+}
 
 
 
 
 /* ===== FOOTER STYLING ===== */
 footer {
+    background-color: #101010;
     font-family: var(--main-font), sans-serif;
     color: white;
     padding: 0 1.5em;
+    grid-area: 3/1/4/1;
 }
 
 .more-info {
