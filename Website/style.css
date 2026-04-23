@@ -1,3 +1,16 @@
+/* ===== FONTS INITIALIZE ===== */
+
+@font-face {
+    font-family: 'Asap Condensed';
+    src: url(website-media/Fonts/AsapCondensed-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Asap Condensed SemiBold';
+    src: url(website-media/Fonts/AsapCondensed-SemiBold.ttf) format('truetype');
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -108,49 +121,70 @@ header.nav-open .nav-bar {
 
 /* ===== FOOTER STYLING ===== */
 footer {
-    padding: 30px;
-    background-color: #0A0A0A;
-    color: #e2e2e2;
-}
-
-h5, h6 {
-    margin: 0;
-    font-size: 12px;
-}
-
-p {
-    margin-top: 10px;
-    font-size: 10px;
-    line-height: 15px;
+    font-family: 'Asap Condensed', sans-serif;
+    color: white;
+    padding: 0 1.5em;
 }
 
 .more-info {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 17px;
-}
-
-.footer-social-media, .footer-delivery-apps {
-    margin: 10px 0 0 0;
-    float: right;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 1em;
+    padding: 2rem 0;
 }
 
 .footer-social-media img, .footer-delivery-apps img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    width: 1.7rem;
+    border-radius: 50px;
+    margin: 0 1px;
 }
 
-.float-right {
+.footer-social-media img {
+    filter: grayscale(100%) brightness(110%);
+}
+
+footer h5, footer h6 {
+    margin: 0 0 1em 0;
+}
+
+footer h5 {
+    font-size: 1em;
+}
+
+footer h6 {
+    font-size: 0.75em;
+}
+
+footer p {
+    font-size: 0.75em;
+    margin: 0.5rem 0;
+}
+
+.contact-us-here, .opening-hours, .branch-location {
+    text-align: left;
+}
+
+.find-us-here, .technical-support, .delivery-apps {
     text-align: right;
+}
+
+span {
+    margin: 0 0 1em 0;
+}
+
+b {
+    margin-right: 0.15em;
 }
 
 .copyright {
     text-align: center;
+    padding: 1em;
+    font-size: 0.8rem;
+    font-family: 'Asap Condensed Semibold', sans-serif;
 }
+
+
 
 
 
