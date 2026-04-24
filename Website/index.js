@@ -8,16 +8,34 @@ toggle.addEventListener('click', () => {
     header.classList.toggle('nav-open');
 });
 
+// ===== MENU CATEGORIES FOOD FILTER =====
+
+function display_menu(menu_category) {
+    // Hides all categories with the class 'menu-group'
+    const category = document.getElementsByClassName("menu-group");
+    for (let i = 0; i < category.length; i++) {
+        category[i].style.display = "none";
+    }
+
+    // Displays the chosen category by id name
+    const chosen_category = document.getElementById(menu_category);
+    if (chosen_category) {
+        chosen_category.style.display = "grid";
+    }
+}
+
 // ===== OFFER CAROUSEL BUTTON JS =====
 
-// Declaring Global variables
-let scrollContainer = document.querySelector(".gallery")
-let backBtn = document.getElementById("back-btn");  
-let nextBtn = document.getElementById("next-btn");
+let slideIndex = 1;
+showSlides(slideIndex);
 
-let backComputedStyle = window.getComputedStyle(backBtn);
-let nextComputedStyle = window.getComputedStyle(nextBtn);
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
 // Adding an event listener with the "wheel" event
 scrollContainer.addEventListener("wheel", (evt) => {
@@ -37,17 +55,18 @@ backBtn.addEventListener("click", () => {
     scrollContainer.scrollLeft -= 460;
 })
 
-
-// ===== MENU CATEGORIES FOOD FILTER =====
-
-function display_menu(menu_category) {
-    const category = document.getElementsByClassName("menu-group");
-    for (let i = 0; i < category.length; i++) {
-        category[i].style.display = "none";
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("promotion-offer");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-
-    const chosen_category = document.getElementById(menu_category);
-    if (chosen_category) {
-        chosen_category.style.display = "grid";
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
     }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
