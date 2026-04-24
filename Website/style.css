@@ -233,7 +233,7 @@ header.nav-open .nav-bar {
     font-family: var(--main-font), sans-serif;
 }
 
-.btn-container button:hover {
+.btn-container button:hover, .beige-bg button:hover {
     background-color: #350000;
     box-shadow: 0 0 8px 2px #801622;
 }
