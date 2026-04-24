@@ -8,6 +8,22 @@ toggle.addEventListener('click', () => {
     header.classList.toggle('nav-open');
 });
 
+// ===== MENU CATEGORIES FOOD FILTER =====
+
+function display_menu(menu_category) {
+    // Hides all categories with the class 'menu-group'
+    const category = document.getElementsByClassName("menu-group");
+    for (let i = 0; i < category.length; i++) {
+        category[i].style.display = "none";
+    }
+
+    // Displays the chosen category by id name
+    const chosen_category = document.getElementById(menu_category);
+    if (chosen_category) {
+        chosen_category.style.display = "grid";
+    }
+}
+
 // ===== OFFER CAROUSEL BUTTON JS =====
 
 let slideIndex = 1;
@@ -20,6 +36,24 @@ function plusSlides(n) {
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
+
+// Adding an event listener with the "wheel" event
+scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
+})
+
+// Event listener that listens for a click from the Next Button, sliding left between the images
+nextBtn.addEventListener("click", () => {
+    scrollContainer.style.scrollBehavior = "smooth";
+    scrollContainer.scrollLeft += 460;
+})
+
+// Event listener that listens for a click from the Back Button, sliding right between the images
+backBtn.addEventListener("click", () => {
+    scrollContainer.style.scrollBehavior = "smooth";
+    scrollContainer.scrollLeft -= 460;
+})
 
 function showSlides(n) {
     let i;
