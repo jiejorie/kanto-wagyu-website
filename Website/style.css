@@ -238,6 +238,10 @@ header.nav-open .nav-bar {
     box-shadow: 0 0 8px 2px #801622;
 }
 
+hr {
+    margin: 0;
+}
+
 .menu-display-section {
     background-image: url(website-media/Menu/reviews-menu-bg.png);
     background-repeat: no-repeat;
@@ -665,7 +669,6 @@ b {
     #business-lunch-2 {
         grid-area: auto /span 4;
         padding: 15px;
-
     }
 
     #business-lunch-2 img {
@@ -710,5 +713,83 @@ b {
     .beige-bg button {
         padding: 10px 60px;
         font-size: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    /* === FOR NAVIGATION LINKS === */
+    .header-logo {
+        width: 80px;
+        height: 30px;
+    }
+
+    .nav-links ul li a {
+        font-size: 15px;
+    }
+    
+    /* === FOR MAIN STYLING (MENU PAGE) === */
+    .btn-container {
+        gap: 20px;
+    }
+
+    .btn-container button {
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+
+    .menu-display-section {
+        padding: 30px;
+    }
+
+    .menu-group, .sub-menu-group {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .sub-menu-group, .sub-menu-group h2, h3 {
+        grid-area: auto/span 5;
+    }
+
+    .sub-menu-group h2 {
+        margin: 10px 0;
+    }
+
+    .menu-item img {
+        aspect-ratio: 3 / 2;
+    }
+
+    #business-lunch-2 {
+        grid-area: auto;
+    }
+
+    #business-lunch-2 img {
+        grid-row: auto;
+    }
+
+    #business-lunch-2 p:nth-child(2) {
+        font-size: 0.9rem;
+        grid-area: auto /span 2;
+    }
+
+    #business-lunch-2 p:nth-child(3) {
+        font-size: 0.9rem;
+    }
+
+    #business-lunch-2 p:nth-child(4) {
+        font-size: 0.9rem;
+    }
+
+    #business-lunch-2 p:nth-child(5) {
+        justify-self: top;
+        font-size: 0.9rem;
+    }
+
+    .beige-bg h2 {
+        font-size: 50px;
+    }
+
+    .beige-bg button {
+        margin: 10px;
+        padding: 10px 60px;
+        font-size: 25px;
     }
 }
