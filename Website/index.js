@@ -36,3 +36,18 @@ backBtn.addEventListener("click", () => {
     scrollContainer.style.scrollBehavior = "smooth";
     scrollContainer.scrollLeft -= 460;
 })
+
+
+// ===== MENU CATEGORIES FOOD FILTER =====
+
+function display_menu(menu_category) {
+    const category = document.getElementsByClassName("menu-group");
+    for (let i = 0; i < category.length; i++) {
+        category[i].style.display = "none";
+    }
+
+    const chosen_category = document.getElementById(menu_category);
+    if (chosen_category) {
+        chosen_category.style.display = "grid";
+    }
+}
