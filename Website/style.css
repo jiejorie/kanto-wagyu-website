@@ -189,7 +189,11 @@ header.nav-open .nav-bar {
     transition: ease 0.3s;
 }
 
-/* ===== MAIN SECTION STYLING (MENU PAGE) ===== */
+#book-header-button:hover {
+    background-color: hsl(0, 0%, 80%);
+}
+
+/* ===== MAIN STYLING (MENU PAGE) ===== */
 
 .title {
     margin: 20px;
@@ -258,7 +262,9 @@ header.nav-open .nav-bar {
     align-self:first baseline;
 }
 
-
+#business-lunch {
+    margin-bottom: 0;
+}
 
 .menu-item {
     background-color: #000000;
@@ -302,10 +308,6 @@ header.nav-open .nav-bar {
     font-size: 12px;
     line-height: 1.5;
     color:rgba(255, 255, 255, 0.5)
-}
-
-#book-header-button:hover {
-    background-color: hsl(0, 0%, 80%);
 }
 
 /* ===== MAIN STYLING (HOME PAGE)===== */
