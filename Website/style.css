@@ -232,7 +232,7 @@ header.nav-open .nav-bar {
     font-family: var(--main-font), sans-serif;
 }
 
-.btn-container button:hover {
+button:hover {
     background-color: #350000;
     box-shadow: 0 0 8px 2px #801622;
 }
@@ -277,6 +277,7 @@ header.nav-open .nav-bar {
     grid-row-gap: 10px; 
     grid-column-gap: 10px;
     border: solid 1px #B93B41;
+    line-height: 1.5;
 }
 
 .menu-item img {
@@ -291,6 +292,14 @@ header.nav-open .nav-bar {
 .menu-item p {
     margin: 0;
     font-size: 0.7rem;
+}
+
+.menu-item b {
+    text-transform: uppercase;
+}
+
+.menu-item i {
+    color:hsl(0, 0%, 67%)
 }
 
 .menu-item p:nth-child(2) {
@@ -308,6 +317,46 @@ header.nav-open .nav-bar {
     font-size: 12px;
     line-height: 1.5;
     color:rgba(255, 255, 255, 0.5)
+}
+
+.menu-item p:nth-child(5) {
+    grid-area: 4 /span 3;
+    justify-self: top;
+    color:rgba(255, 255, 255, 0.5)
+}
+
+#business-lunch-2 {
+    grid-area: auto /span 2;
+}
+
+#business-lunch-2 p:nth-child(2) {
+    font-size: 20px;
+}
+
+.beige-bg {
+    background-color: #FFFFF0;
+    padding: 70px;
+    text-align: center;
+    line-height: .5;
+    font-family: var(--main-font), sans-serif;
+}
+
+.beige-bg h2 {
+    font-size: 25px;
+}
+
+.beige-bg h3 {
+    font-size: 13px;
+}
+
+.beige-bg button {
+    padding: 8px 50px;
+    background-color: #660810;
+    color:#FFFFFF;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--main-font), sans-serif;
 }
 
 /* ===== MAIN STYLING (HOME PAGE)===== */
