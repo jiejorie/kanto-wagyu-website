@@ -251,6 +251,7 @@ header.nav-open .nav-bar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto, 1fr);
+    margin-top: 5px;
     gap: 10px;
 }
 
@@ -564,9 +565,10 @@ b {
 
 
 
-/* ===== MEDIA QUERIES (so far only for navigation bars) ===== */
+/* ===== MEDIA QUERIES ===== */
 
 @media (min-width: 800px) {
+    /* === FOR NAVIGATION LINKS === */
     .nav-links {
         position: static;
         max-height: none;
@@ -604,5 +606,104 @@ b {
 
     .nav-button {
         display: none;
+    }
+
+    /* === FOR MAIN STYLING (MENU PAGE) === */
+    .title {
+        line-height: 1.2;
+    }
+
+    .title h1 {
+        font-size: 50px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .btn-container button {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .menu-group, .sub-menu-group {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .sub-menu-group, .sub-menu-group h2, h3 {
+        grid-area: auto/span 4;
+        font-size: 35px;
+    }
+
+    .sub-menu-group h2 {
+        margin: 5px 0;
+    }
+
+    .sub-menu-group h3 {
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .menu-item img {
+        aspect-ratio: 4 / 4;
+    }
+
+    .menu-item p {
+        font-size: 0.9rem;
+    }
+
+    .menu-item p:nth-child(4), .menu-item p:nth-child(5) {
+        font-size: 0.9rem;
+    }
+
+    #business-lunch-2 {
+        grid-area: auto /span 4;
+        padding: 15px;
+
+    }
+
+    #business-lunch-2 img {
+        aspect-ratio: 3 / 2;
+        grid-row: 1 / 5;
+    }
+
+    #business-lunch-2 p:nth-child(2) {
+        font-size: 30px;
+        grid-area: auto /span 2;
+    }
+
+    #business-lunch-2 p:nth-child(3) {
+        font-size: 25px;
+    }
+
+    #business-lunch-2 p:nth-child(4) {
+        font-size: 20px;
+    }
+
+    #business-lunch-2 p:nth-child(5) {
+        font-size: 18px;
+    }
+
+    .beige-bg {
+        background-color: #FFFFF0;
+        padding: 150px;
+        text-align: center;
+        line-height: .5;
+        font-family: var(--main-font), sans-serif;
+    }
+
+    .beige-bg h2 {
+        margin-top: 0;
+        font-size: 40px;
+    }
+
+    .beige-bg h3 {
+        font-size: 20px;
+    }
+
+    .beige-bg button {
+        padding: 10px 60px;
+        font-size: 20px;
     }
 }
