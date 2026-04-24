@@ -245,7 +245,8 @@ hr {
 .menu-display-section {
     background-image: url(website-media/Menu/reviews-menu-bg.png);
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: top;
+    background-size: cover;
     padding: 20px;
     font-family: var(--main-font), sans-serif;
     color:#FFFFFF;
@@ -389,14 +390,14 @@ main #home-main {
 
 /* ===== MAIN STYLING (HOME PAGE: PROMOTIONS)===== */
 
-.promotions-cont {
+#promotions {
     background-color: #0A0A0A;
     color: white;
     text-align: center;
     font-family: var(--main-font-bold), sans-serif;
 }
 
-.promotions-cont h1 {
+#promotions h1 {
     font-size: 2.2em;
 }
 
