@@ -211,7 +211,7 @@ header.nav-open .nav-bar {
 }
 
 .btn-container {
-    margin: 20px 50px;
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -219,10 +219,10 @@ header.nav-open .nav-bar {
 }
 
 .btn-container button {
-    padding: 3px 20px;
+    padding: 3px 15px;
     background-color: #660810;
     color:#FFFFFF;
-    font-size: 13px;
+    font-size: 10px;
     border: none;
     border-radius: 10px;
     font-family: var(--main-font), sans-serif;
@@ -241,12 +241,24 @@ header.nav-open .nav-bar {
     color:#FFFFFF;
 }
 
-.menu-group {
+.menu-group, .sub-menu-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     gap: 10px;
 }
+
+.sub-menu-group, .sub-menu-group h2, h3 {
+    grid-area: auto/span 2;
+}
+
+.sub-menu-group h3 {
+    margin: 0;
+    font-size: 15px;
+    align-self:first baseline;
+}
+
+
 
 .menu-item {
     background-color: #000000;
@@ -291,6 +303,7 @@ header.nav-open .nav-bar {
     line-height: 1.5;
     color:rgba(255, 255, 255, 0.5)
 }
+
 #book-header-button:hover {
     background-color: hsl(0, 0%, 80%);
 }
