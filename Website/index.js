@@ -10,29 +10,29 @@ toggle.addEventListener('click', () => {
 
 // ===== OFFER CAROUSEL BUTTON JS =====
 
-// Declaring Global variables
-let scrollContainer = document.querySelector(".gallery")
-let backBtn = document.getElementById("back-btn");  
-let nextBtn = document.getElementById("next-btn");
+let slideIndex = 1;
+showSlides(slideIndex);
 
-let backComputedStyle = window.getComputedStyle(backBtn);
-let nextComputedStyle = window.getComputedStyle(nextBtn);
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-// Adding an event listener with the "wheel" event
-scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
-})
-
-// Event listener that listens for a click from the Next Button, sliding left between the images
-nextBtn.addEventListener("click", () => {
-    scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft += 460;
-})
-
-// Event listener that listens for a click from the Back Button, sliding right between the images
-backBtn.addEventListener("click", () => {
-    scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft -= 460;
-})
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("promotion-offer");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
