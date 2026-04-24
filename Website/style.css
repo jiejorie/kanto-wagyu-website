@@ -293,6 +293,10 @@ button:hover {
     font-size: 0.7rem;
 }
 
+.menu-item b {
+    text-transform: uppercase;
+}
+
 .menu-item p:nth-child(2) {
     grid-area: 2 /span 2;
     align-self:first baseline;
