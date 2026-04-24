@@ -241,6 +241,7 @@ header.nav-open .nav-bar {
 .menu-display-section {
     background-image: url(website-media/Menu/reviews-menu-bg.png);
     background-repeat: no-repeat;
+    background-position: center bottom;
     padding: 20px;
     font-family: var(--main-font), sans-serif;
     color:#FFFFFF;
