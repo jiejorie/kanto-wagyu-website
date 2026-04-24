@@ -714,6 +714,51 @@ b {
         padding: 10px 60px;
         font-size: 20px;
     }
+
+    /* === FOR FOOTER STYLING === */
+    .more-info {
+        margin: 10px 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-row-gap: 0.7em;
+    }
+
+    footer h5 {
+        font-size: 1.2em;
+    }
+
+    footer h6 {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+        margin: 0.2rem 0;
+        line-height: 1.5;
+    }
+
+    .contact-us-here, .find-us-here {
+        text-align: left;
+        grid-column: 1;
+    }
+
+    .opening-hours, .branch-location {
+        text-align: center;
+        grid-column: 2;
+    }
+
+    .opening-hours, .technical-support {
+        grid-row: 1;
+    }
+
+    .branch-location, .delivery-apps {
+        grid-row: 2;
+    }
+
+    .technical-support, .delivery-apps {
+        text-align: right;
+        grid-column: 3;
+    }
 }
 
 @media (min-width: 1280px) {
@@ -791,5 +836,25 @@ b {
         margin: 10px;
         padding: 10px 60px;
         font-size: 25px;
+    }
+
+    /* === FOR FOOTER STYLING === */
+    .more-info {
+        margin: 30px 70px;
+        grid-row-gap: 1.2em;
+    }
+    
+    footer h5 {
+        font-size: 1.5em;
+    }
+
+    footer h6 {
+        font-size: 1.2em;
+    }
+
+    footer p {
+        font-size: 1em;
+        margin: 0.2rem 0;
+        line-height: 1.5;
     }
 }
