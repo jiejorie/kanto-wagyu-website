@@ -283,6 +283,11 @@ header.nav-open .nav-bar {
     line-height: 1.5;
 }
 
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px 3px #3a0a05;
+}
+
 .menu-item img {
     width: 100%;
     height: auto;
@@ -628,7 +633,7 @@ b {
 
     .menu-group, .sub-menu-group {
         grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
+        gap: 20px;
     }
 
     .sub-menu-group, .sub-menu-group h2, h3 {
