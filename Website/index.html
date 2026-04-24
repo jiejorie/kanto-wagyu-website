@@ -39,8 +39,8 @@
             <img src="website-media/Header/kanto-main-logo.png" alt="kanto main logo">
             <p><span id="extra-header-text">In the vibrant city of Abu Dhabi,</span> Kantō Wagyu Restaurant and Café, a
                 unique Pan-Asian paradise.</p>
-            <button id="menu-header-button">MENU</button>
-            <button id="book-header-button">BOOK NOW</button>
+            <button id="menu-header-button" onclick="window.location.href = 'menu.html';">MENU</button>
+            <button id="book-header-button" onclick="window.location.href = 'home.html#book';">BOOK NOW</button>
         </div>
     </header>
     <p id="japanese-promotions-text">人気メニュー</p>
@@ -104,15 +104,13 @@
                         alt="right arrow"></a>
 
             </div>
-            <br>
-
             <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-
-
+            
+            <button id="view-menu-btn" type="menu" onclick="window.location.href = 'menu.html';">VIEW MENU</button>
 
         </div>
     </main>

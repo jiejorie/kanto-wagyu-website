@@ -181,6 +181,7 @@ header.nav-open .nav-bar {
 
 #menu-header-button:hover {
     background-color: hsl(0, 0%, 20%);
+    box-shadow: none;
 }
 
 #book-header-button {
@@ -374,6 +375,9 @@ main #home-main {
     margin: -1em 0 0 0;
 }
 
+
+/* ===== MAIN STYLING (HOME PAGE: PROMOTIONS)===== */
+
 .promotions-cont {
     background-color: #0A0A0A;
     color: white;
@@ -385,8 +389,6 @@ main #home-main {
     font-size: 2.2em;
 }
 
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
 .promotion-offer {display: none}
 picture {vertical-align: middle;}
 
@@ -426,11 +428,6 @@ picture img, picture source {
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
 }
 
 .offers-text {
@@ -482,7 +479,13 @@ picture img, picture source {
     100% {opacity: 1; transform: scale(1)}
 }
 
-
+#view-menu-btn {
+    margin: 1em;
+    width: 5.5em;
+    height: 1.55em;
+    font-family: var(--main-font-bold), sans-serif;
+    font-size: 1.3em;
+}
 
 
 /* ===== FOOTER STYLING ===== */
