@@ -245,7 +245,8 @@ hr {
 .menu-display-section {
     background-image: url(website-media/Menu/reviews-menu-bg.png);
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: top;
+    background-size: cover;
     padding: 20px;
     font-family: var(--main-font), sans-serif;
     color:#FFFFFF;
