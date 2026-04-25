@@ -6,6 +6,11 @@
 }
 
 @font-face {
+    font-family: 'Asap Condensed Medium';
+    src: url(website-media/Fonts/AsapCondensed-Medium.ttf) format('truetype');
+}
+
+@font-face {
     font-family: 'Asap Condensed SemiBold';
     src: url(website-media/Fonts/AsapCondensed-SemiBold.ttf) format('truetype');
 }
@@ -20,11 +25,20 @@
     src: url(website-media/Fonts/NotoSerifJP-SemiBold.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url(website-media/Fonts/Roboto-Light.ttf) format('truetype');
+}
+
+
+
 /* ===== ROOT VARIABLES ===== */
 :root {
     --main-font: 'Asap Condensed';
+    --main-font-medium: 'Asap Condensed Medium';
     --main-font-bold: 'Asap Condensed SemiBold';
     --secondary-font: 'Jost';
+    --tertiary-font: 'Roboto';
     --japanese-font: 'Noto Serif JP';
 }
 
@@ -493,11 +507,116 @@ picture img, picture source {
 
 #view-menu-btn {
     margin: 1em;
-    width: 5.5em;
+    width: 5.8em;
     height: 1.55em;
-    font-family: var(--main-font-bold), sans-serif;
-    font-size: 1.3em;
+    font-family: var(--main-font-medium), sans-serif;
+    font-size: 1.25em;
+    background-color: #FFFFF0;
+    border: none;
 }
+
+/* ===== MAIN STYLING (HOME PAGE: REVIEWS)===== */
+
+#reviews {
+    font-family: var(--main-font-bold), sans-serif;   
+}
+
+#reviews h1{
+    color: white;
+    font-size: 2.25em;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 3em;
+}
+
+.review-header-details {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5em 0;
+    text-align: center;
+    gap: 0.5em;
+}
+
+#star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.review-header-details p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.review-header-details img {
+    width: 5.5em;
+    align-self: center;
+}
+
+.testimonials-section {
+    background-image: url(website-media/Home/reviews/reviews-bg-mobile.png);
+    background-position: top;
+    background-size: cover;
+    height: 49em;
+    background-repeat: no-repeat;
+}
+
+.testimonials-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.5em;
+    gap: 2.25em;
+}
+
+.testimonial {
+    background-color: #FFFFF0;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+    border-radius: 1em;
+    width: 20.2em;
+    height: 10.3em;
+    display: flex;
+    box-shadow: ;
+    
+}
+
+.testimonial-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr auto;
+    padding: 2em 1em 1em 1em;
+    grid-column-gap: 0.1em;
+}
+
+.testimonial img {
+    width: 4em;
+    justify-self: start;
+}
+
+.testimonial .testimonial-writer {
+    justify-self: start;
+    align-self: start;
+    font-size: 0.85em;
+    margin: 0;
+}
+
+.testimonial-text {
+    margin: 0 1.1em 0 0;
+    font-family: var(--tertiary-font), sans-serif;
+}
+
+.share-experience-section {
+    padding: 10em 0;
+}
+
+/* ===== MAIN STYLING (HOME PAGE: DELIVERY)===== */
+
+ #delivery img {
+    width: 30px;
+ }
 
 
 /* ===== FOOTER STYLING ===== */

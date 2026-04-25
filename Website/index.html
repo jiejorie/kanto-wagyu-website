@@ -64,7 +64,7 @@
                             srcset="website-media\Home\offers-carousel\unli-wagyu\unli-wagyu-desktop.png">
                         <source media="(min-width: 800px)"
                             srcset="website-media\Home\offers-carousel\unli-wagyu\unli-wagyu-tablet.png">
-                        <img src="website-media/Home/offers-carousel/unli-wagyu/unli-wagyu-mobile.png" alt=""
+                        <img src="website-media/Home/offers-carousel/unli-wagyu/unli-wagyu-mobile.png" alt="unli wagyu"
                             width="100%">
                     </picture>
                 </div>
@@ -126,28 +126,36 @@
             <div class="testimonials-section">
                 <h1>REVIEWS</h1>
                 <div class="review-header-details">
-                    <p>4.7</p>
-                    <img src="website-media/Home/reviews/Rating.png" alt="Star rating">
+                    <div id="star-rating">
+                        <p>4.7</p>
+                        <img src="website-media/Home/reviews/Rating.png" alt="Star rating">
+                    </div>
                     <p>1.2K REVIEWS</p>
                 </div>
                 <div class="testimonials-cont">
                     <div class="testimonial">
-                        <img src="website-media/Home/reviews/Quote.png" alt="quotes">
-                        <p id="testimonial-text">The service was exceptional attentive, warm, and professional from
-                            start to finish.</p>
-                        <p id="testimonial-writer">Rose Jean Elamil</p>
+                        <div class="testimonial-content">
+                            <img src="website-media/Home/reviews/Quote.png" alt="quotes">
+                            <p class="testimonial-text">The service was exceptional attentive, warm, and professional from
+                                start to finish.</p>
+                            <p class="testimonial-writer">Rose Jean Elamil</p>
+                        </div>
                     </div>
                     <div class="testimonial">
-                        <img src="website-media/Home/reviews/Quote.png" alt="quotes">
-                        <p id="testimonial-text">The Wagyu is, quite simply, spectacular—perfectly marbled, deeply
-                            flavorful, and truly melt-in-your-mouth.</p>
-                        <p id="testimonial-writer">Ma. Arwina Gabriel</p>
+                        <div class="testimonial-content">
+                            <img src="website-media/Home/reviews/Quote.png" alt="quotes">
+                            <p class="testimonial-text">The Wagyu is, quite simply, spectacular—perfectly marbled, deeply
+                                flavorful, and truly melt-in-your-mouth.</p>
+                            <p class="testimonial-writer">Ma. Arwina Gabriel</p>
+                        </div>
                     </div>
                     <div class="testimonial">
-                        <img src="website-media/Home/reviews/Quote.png" alt="quotes">
-                        <p id="testimonial-text">The food was absolutely delicious and highly recommended. Will
-                            definitely come back!</p>
-                        <p id="testimonial-writer">RM</p>
+                        <div class="testimonial-content">
+                            <img src="website-media/Home/reviews/Quote.png" alt="quotes">
+                            <p class="testimonial-text">The food was absolutely delicious and highly recommended. Will
+                                definitely come back!</p>
+                            <p class="testimonial-writer">RM</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,11 +166,10 @@
                     onclick="window.location.href = 'https://www.google.com/search?q=google+reviews+kanto+wagyu&sca_esv=33d040cb389eca3f&biw=1536&bih=738&sxsrf=ANbL-n4kOKtAxNxRjHkMAG6D3qXJvG21lA%3A1777046009325&ei=-ZHraZHhEt3o7_UPidOHuAI&oq=google+reviews+&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2dvb2dsZSByZXZpZXdzICoCCAAyBBAjGCcyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyBRAAGIAEMgoQABiABBiKBRhDMgoQABiABBiKBRhDMgoQABiABBiKBRhDMgUQABiABEjICVCpA1ipA3ABeAGQAQCYAa8BoAGvAaoBAzAuMbgBAcgBAPgBAZgCAqACuwHCAgcQIxiwAxgnwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICGRAuGIAEGIoFGEMYxwEY0QMYyAMYsAPYAQGYAwCIBgGQBhO6BgYIARABGAmSBwMxLjGgB6gGsgcDMC4xuAezAcIHAzItMsgHCYAIAQ&sclient=gws-wiz-serp#lrd=0x3e5e67fa5ac65985:0x7c468b4ffab50834,3,,,,'">
                     RATE US HERE
                 </button>
-
-                <hr>
-                <hr>
             </div>
         </section>
+        <hr>
+        <hr>
 
         <section id="delivery">
             <h1>DELIVERY</h1>
@@ -176,6 +183,32 @@
                 <h3>お店の味を</h3>
                 <h3>ご自宅で。</h3>
             </div>
+        </section>
+
+        <section id="book">
+            <h1>RESERVATION</h1>
+            <h2>DINE WITH US  — RESERVE WITH US NOW</h2>
+            <form action="">
+                <label for="First Name">Full Name*</label>
+                <input type="text" id="book-first-name" placeholder="Your Full Name">
+                
+                <label for="Phone Number">Phone Number*</label>
+                <input type="number" id="book-phone-number" placeholder="+971">
+                
+                <label for="Email">Email*</label>
+                <input type="text" id="book-email" placeholder="Your Email">
+                
+                <label for="Date">Date*</label>
+                <input type="date" id="book-date">
+                
+                <label for="Time">Time*</label>
+                <input type="time" id="book-time">
+                
+                <label for="Guest Size">Guest Size*</label>
+                <input type="number" id="book-guests" placeholder="Enter Amount">
+
+                <button type="submit">SUBMIT</button>
+            </form>
         </section>
     </main>
 
