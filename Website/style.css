@@ -644,7 +644,6 @@ picture img, picture source {
 }
 
 
-
 /* ===== MAIN STYLING (HOME PAGE: DELIVERY)===== */
 
 #delivery {
@@ -681,6 +680,7 @@ picture img, picture source {
     align-items: center;
     gap: 1.5em;
     margin-top: 3em;
+    margin: 3em 0 2em 0;
 }
 
 .supported-deliveries h3 {
@@ -708,6 +708,64 @@ picture img, picture source {
  #noon-delivery img {
     height: 2.5em;
  }
+
+/* ===== MAIN STYLING (HOME PAGE: RESERVATION)===== */
+
+#book {
+    background-image: url(website-media/Home/reservation/reserve-bg-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1em;
+    font-family: var(--main-font-bold), sans-serif;
+    color: #FFFFF0;
+    text-align: center;
+}
+
+#book h1 {
+    font-size: 2.5em;
+    margin: 0.5em;
+}
+
+#book h2 {
+    font-size: 1.25em;
+}
+
+#book form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em 0;
+}
+
+#book form input {
+    margin: 0.7em 0 1em 0;
+    width: 12.9em;
+    padding: 0.5em 1em;
+    font-family: var(--secondary-font), sans-serif;
+    background-color: #FFFFF0;
+    border: none;
+    color: #0A0A0A;
+}
+
+#book form input:focus {
+    box-shadow: 0px 0px 10px #B93B41;
+    font-weight: 500;
+    outline: solid 0.5px white;
+}
+
+#book form button {
+    width: 12.5em;
+    background-color: #000000;
+    border: none;
+    font-size: 1em;
+    color: white;
+    font-family: var(--main-font-bold), sans-serif;
+    height: 2.3em;
+    padding: 0;
+    margin: 1em 0;
+}
+
 
 /* ===== FOOTER STYLING ===== */
 footer {
