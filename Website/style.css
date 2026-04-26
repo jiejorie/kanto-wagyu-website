@@ -58,7 +58,7 @@ body {
 .bg-img {
     background-image: url("website-media/Header/home-bg.png");
     width: 100%;
-    height: 100vh;
+    height: 50em;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -207,6 +207,9 @@ header.nav-open .nav-bar {
     background-color: hsl(0, 0%, 80%);
 }
 
+
+/* =============== MOBILE FIRST APPROACH =============== */
+
 /* ===== MAIN STYLING (MENU PAGE) ===== */
 
 .title {
@@ -296,7 +299,7 @@ hr {
     grid-template-rows: auto auto 1fr;
     grid-auto-flow: dense;
     grid-row-gap: 10px; 
-    grid-column-gap: 10px;
+    column-gap: 10px;
     border: solid 1px #B93B41;
     line-height: 1.5;
 }
@@ -394,6 +397,7 @@ main #home-main {
 #japanese-promotions-text {
     font-family: var(--japanese-font), sans-serif;
     color: #959595;
+    opacity: 0.5;
     z-index: 50;
     font-size: 2.5em;
     text-align: center;
@@ -473,7 +477,7 @@ picture img, picture source {
 
 .offers-text h2 {
     font-size: 3em;
-    margin: 0 0 0.5em 0;
+    margin: 0 0.3em 0.5em 0.3em;
     animation: carouselAnim 0.5s ease forwards;
     animation-delay: 0.8s;
 }
@@ -585,7 +589,7 @@ picture img, picture source {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr auto;
     padding: 2em 1em 1em 1em;
-    grid-column-gap: 0.1em;
+    column-gap: 0.1em;
 }
 
 .testimonial img {
@@ -674,11 +678,8 @@ picture img, picture source {
 }
 
 .supported-deliveries {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5em;
     margin-top: 3em;
     margin: 3em 0 2em 0;
 }
@@ -694,6 +695,12 @@ picture img, picture source {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.supported-deliveries, .supported-deliveries .left-delivery-brand, .supported-deliveries .right-delivery-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
 }
 
  #delivery img {
@@ -715,7 +722,7 @@ picture img, picture source {
     background-image: url(website-media/Home/reservation/reserve-bg-mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     padding: 1em;
     font-family: var(--main-font-bold), sans-serif;
     color: #FFFFF0;
@@ -736,6 +743,11 @@ picture img, picture source {
     flex-direction: column;
     align-items: center;
     margin: 3em 0;
+}
+
+#book form div {
+    display: flex;
+    flex-direction: column;
 }
 
 #book form input {
@@ -982,6 +994,264 @@ b {
         padding: 10px 60px;
         font-size: 20px;
     }
+
+    /* === FOR HEADER STYLING (HOME PAGE) === */
+
+    .overlay-cont img {
+        width: 14em;
+        height: auto;
+    }
+
+    .overlay-cont p{
+        font-size: 1em;
+        margin: 0 17.5em;
+    }
+
+    .overlay-cont button {
+        font-size: 1.25em;
+        height: 2.4em;
+        width: 9em;
+    }
+
+    .bg-img {
+        height: 55em;
+    }
+
+    /* ===== MAIN STYLING (HOME PAGE: PROMOTIONS)===== */
+
+    #japanese-promotions-text {
+        font-size: 4em;
+        opacity: 0.5;
+    }
+
+    .offer-details {
+        font-size: 1.33em;
+        gap: 1.5em;
+    }
+
+    #promotions h1 {
+        font-size: 4em;
+    }
+
+    .offers-text h2 {
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 117%;
+        margin-top: 0px;
+    }
+
+    .prev img, .next img{
+        width: 2em;
+    }
+
+    .next {
+        right: 43%;
+    }
+
+    .prev {
+        left: 43%;
+    }
+
+    #view-menu-btn {
+        font-size: 1.5em;
+        width: 7.1em;
+        height: 1.8em;
+    }
+
+    /* ===== MAIN STYLING (HOME PAGE: REVIEWS)===== */
+
+    #reviews h1 {
+        font-size: 4em;
+        padding-top: 2.5em;
+    }
+
+    .review-header-details {
+        flex-direction: row;
+        font-size: 1.25em;
+        margin: 2em 0;
+    }
+
+    .review-header-details, #star-rating {
+        gap: 1em;
+    }
+
+    .testimonials-section {
+        background-image: url(website-media/Home/reviews/reviews-bg.png);
+        height: 35em;
+    }
+
+    .testimonials-cont {
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .testimonial {
+        width: 13.6em;
+        height: 17em;
+        box-shadow: 0 5px 5px #c9c9b7b5;
+    }
+
+    .testimonial-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        font-size: 1.25em;
+        padding: 1em 0.5em 1em 0.5em;
+    }
+
+    .testimonial-content img {
+        width: 2em;
+        height: 1.5em;
+    }
+
+    .testimonial .testimonial-writer {
+        font-size: 0.75em;
+    }
+
+    .testimonial-text {
+        font-size: 1em;
+        margin: 1em 0 0 0;
+    }
+
+    .share-experience-section h2 {
+        font-size: 3em;
+    }
+
+    .share-experience-section h3 {
+        font-size: 1.5em;
+    }
+
+    .share-experience-section button {
+        margin: 1em auto 2.5em auto;
+        font-size: 2em;
+        height: 2em;
+    }
+
+    /* ===== MAIN STYLING (HOME PAGE: DELIVERY)===== */
+
+    #delivery h1 {
+        font-size: 4em;
+    }
+
+    #delivery h2 {
+        font-size: 2em;
+    }
+
+    .supported-deliveries {
+        flex-direction: row;
+        align-items: start;
+        padding: 4em;
+    }
+
+    .supported-deliveries h3 {
+        display: block;
+    }
+
+    .supported-deliveries a {
+        width: unset;
+        height: unset;
+    }
+
+    .supported-deliveries .left-delivery-brand a{
+        width: 15.9em;
+        height: 11.7em;
+    }
+
+    #delivery .supported-deliveries .left-delivery-brand a img {
+        height: 2.25em;
+    }
+
+    #delivery .supported-deliveries .left-delivery-brand #deliveroo-delivery img {
+        height: 7em;
+    }
+
+    .supported-deliveries .right-delivery-brand a{
+        width: 16.5em;
+        height: 7.3em;
+    }
+
+    #delivery .supported-deliveries .right-delivery-brand a img {
+        height: 2em;
+    }
+
+    #delivery .supported-deliveries .right-delivery-brand #noon-delivery img {
+        height: 3em;
+    }
+
+    .supported-deliveries #japanese-delivery-text h3 {
+        font-family: var(--japanese-font), sans-serif;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        margin: 0;
+        letter-spacing: 0.5em;
+        font-weight: bold;
+        font-size: 3em;
+        text-shadow: 3px -5px 3px rgba(0, 0, 0, 0.126);
+        line-height: 1.1em;
+    }
+
+    #japanese-delivery-text {
+        display: flex;
+        color: #660810;
+        opacity: 0.6;
+    }
+
+    /* ===== MAIN STYLING (HOME PAGE: RESERVATION)===== */
+
+    #book {
+        background-image: url(website-media/Home/reservation/reserve-bg-tablet.png);
+    }
+    
+    #book h1 {
+        font-size: 4em;
+        margin: 0.5em 0 0.3em 0;
+    }
+
+    #book h2 {
+        font-size: 1.5em;
+    }
+
+    #book form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-self: center;
+        gap: 1em;
+        column-gap: 2.5em;
+        padding: 2em 0 4em 0;
+    }
+
+    #book form label {
+        text-align: left;
+        font-size: 1.25em;
+    }
+
+    #book form input {
+        margin: 0.7em 0 1em 0;
+        width: 16em;
+        padding: 0.5em 1em;
+        font-family: var(--secondary-font), sans-serif;
+        background-color: #FFFFF0;
+        border: none;
+        color: #0A0A0A;
+    }
+
+    #book form .book-phone-number {
+        grid-area: 2/1/3/2;
+    }
+
+    #book form .book-email {
+        grid-area: 1/2/2/3;
+    }
+
+    #book form button {
+        grid-column: 1/span 2;
+        justify-self: center;
+    }
+
 
     /* === FOR FOOTER STYLING === */
     .more-info {
