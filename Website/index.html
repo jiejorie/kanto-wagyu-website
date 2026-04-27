@@ -219,36 +219,36 @@
         <section id="book">
             <h1>RESERVATION</h1>
             <h2>DINE WITH US — RESERVE WITH US NOW</h2>
-            <form action="">
+            <form action="mail.php" method="post">
 
                 <div class="book-first-name">
                     <label for="First Name">Full Name*</label>
-                    <input type="text" id="book-first-name-input" placeholder="Your Full Name">
+                    <input type="text" name="bname" id="book-first-name-input" placeholder="Your Full Name">
                 </div>
 
                 <div class="book-phone-number">
                     <label for="Phone Number">Phone Number*</label>
-                    <input type="number" id="book-phone-number-input" placeholder="+971">
+                    <input type="number" name="bphonenumber" id="book-phone-number-input" placeholder="Your Phone No.">
                 </div>
 
                 <div class="book-email">
                     <label for="Email">Email*</label>
-                    <input type="text" id="book-email-input" placeholder="Your Email">
+                    <input type="text" name="bemail" id="book-email-input" placeholder="Your Email">
                 </div>
 
                 <div class="book-date">
                     <label for="Date">Date*</label>
-                    <input type="date" id="book-date-input">
+                    <input type="date" name="bdate" id="book-date-input">
                 </div>
 
                 <div class="book-time">
                     <label for="Time">Time*</label>
-                    <input type="time" id="book-time-input">
+                    <input type="time" name="btime" id="book-time-input">
                 </div>
 
                 <div class="book-guests">
                     <label for="Guest Size">Guest Size*</label>
-                    <input type="number" id="book-guests-input" placeholder="Enter Amount">
+                    <input type="number" name="bguest" id="book-guests-input" placeholder="Enter Amount">
                 </div>
 
                 <button type="submit">SUBMIT</button>
