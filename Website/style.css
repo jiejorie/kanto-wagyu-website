@@ -1467,10 +1467,6 @@ b {
         grid-row: 2;
     }
 
-
-
-    
-
     /* ===== FOOTER STYLING ===== */
     .more-info {
         margin: 10px 30px;
@@ -1788,6 +1784,19 @@ b {
         justify-self: start;
         grid-column: 1;
         width: 100%;
+    }
+
+    /* ===== ABOUT US STYLING ===== */
+    #about-us-bg {
+        background-size: cover;
+    }
+
+    #about-us-bg button {
+        font-size: 18px;
+    }
+
+    .why-we-started, .logo-story {
+        padding: 30px 250px;
     }
 
     /* === FOR FOOTER STYLING === */
