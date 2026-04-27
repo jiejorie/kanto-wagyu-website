@@ -781,6 +781,30 @@ main #home-main {
     margin: 1em 0;
 }
 
+/* ===== ABOUT US STYLING ===== */
+.black-bg {
+    background-color: #0A0A0A;
+} 
+
+#about-us-bg {
+    background-image: url(website-media/Header/home-bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: 0 30px 30px 30px;
+    padding: 100px;
+    font-family: var(--main-font), sans-serif;
+    color:#FFFFFF;
+}
+
+#japanese-about-text {
+    margin: 0;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+}
+
+
+
 
 /* ===== FOOTER STYLING ===== */
 footer {
@@ -1255,8 +1279,7 @@ b {
         justify-self: center;
     }
 
-
-    /* === FOR FOOTER STYLING === */
+    /* ===== FOOTER STYLING ===== */
     .more-info {
         margin: 10px 30px;
         grid-template-columns: 1fr 1fr 1fr;
