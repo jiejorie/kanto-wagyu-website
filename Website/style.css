@@ -783,8 +783,9 @@ main #home-main {
 
 /* ===== ABOUT US STYLING ===== */
 .black-bg {
-    background-color: #0A0A0A;
+    background: #0A0A0A;
     color:#FFFFFF;
+    font-family: var(--main-font), sans-serif;
 } 
 
 #about-us-bg {
@@ -793,7 +794,6 @@ main #home-main {
     background-position: top;
     margin: 0 30px 30px 30px;
     padding: 100px;
-    font-family: var(--main-font), sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -823,7 +823,84 @@ main #home-main {
     font-family: var(--main-font), sans-serif;
 }
 
+.why-we-started, .logo-story {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+.why-we-started h2, .logo-story h2 {
+    margin: 20px;
+    text-align: center;
+}
+
+.why-we-started img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 2;
+    object-fit: cover;
+}
+
+.why-we-started p {
+    margin: 15px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.sushi-images, .kanto-elements {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.sushi-images {
+    justify-content: center;
+}
+
+.sushi {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sushi p {
+    font-size: 0.7em;
+    padding: 0;
+    margin: 0;
+}
+
+.kanto-elements {
+    flex-direction: column;
+    padding: 45px;
+    gap: 15px;
+}
+
+.element-group {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+.element-group hr {
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin: 0; 
+    width: 100%;
+}
+
+.element-group p {
+    font-size: 0.8em;
+    text-align: center;
+    margin: 5px;
+}
+
+.element-text {
+    align-content: center;
+}
 
 
 /* ===== FOOTER STYLING ===== */
