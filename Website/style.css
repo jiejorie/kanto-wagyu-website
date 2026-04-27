@@ -781,6 +781,127 @@ main #home-main {
     margin: 1em 0;
 }
 
+/* ===== ABOUT US STYLING ===== */
+.black-bg {
+    background: #0A0A0A;
+    color:#FFFFFF;
+    font-family: var(--main-font), sans-serif;
+} 
+
+#about-us-bg {
+    background-image: url(website-media/Header/home-bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: 0 30px 30px 30px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#japanese-about-text {
+    margin: 0;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    align-self: center;
+}
+
+#about-us-bg h4 {
+    color: #0A0A0A;
+    text-align: center;
+    font-weight: 0;
+}
+
+#about-us-bg button {
+    background-color: #555550;
+    padding: 8px 5px;
+    color:#FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    font-family: var(--main-font), sans-serif;
+}
+
+.why-we-started, .logo-story {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.why-we-started h2, .logo-story h2 {
+    margin: 20px;
+    text-align: center;
+}
+
+.why-we-started img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 2;
+    object-fit: cover;
+}
+
+.why-we-started p {
+    margin: 15px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.sushi-images, .kanto-elements {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.sushi-images {
+    justify-content: center;
+}
+
+.sushi {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sushi p {
+    font-size: 0.7em;
+    padding: 0;
+    margin: 0;
+}
+
+.kanto-elements {
+    flex-direction: column;
+    padding: 45px;
+    gap: 15px;
+}
+
+.element-group {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+.element-group hr {
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin: 0; 
+    width: 100%;
+}
+
+.element-group p {
+    font-size: 0.8em;
+    text-align: center;
+    margin: 5px;
+}
+
+.element-text {
+    align-content: center;
+}
+
 
 /* ===== FOOTER STYLING ===== */
 footer {
@@ -1255,8 +1376,7 @@ b {
         justify-self: center;
     }
 
-
-    /* === FOR FOOTER STYLING === */
+    /* ===== FOOTER STYLING ===== */
     .more-info {
         margin: 10px 30px;
         grid-template-columns: 1fr 1fr 1fr;
