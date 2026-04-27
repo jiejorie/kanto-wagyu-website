@@ -1359,77 +1359,113 @@ b {
 
     /* ===== ABOUT US STYLING ===== */
     #about-us-bg h4 {
-        font-size: 1.5em;
+        font-size: 15px;
     }
 
     #about-us-bg button {
-        margin: 0 200px 0 200px;
+        font-size: 15px;
     }
 
-    .why-we-started, .logo-story {
-        padding: 30px 100px;
-        gap: 30px;
-        align-items: center;
+    #japanese-about-text {
+        letter-spacing: 30px;
+        font-size: 3em;
+    }
+
+    .why-we-started, .sushi-images, .logo-story {
+        padding: 30px 50px;
+        gap: 20px;
     }
 
     .why-we-started h2, .logo-story h2 {
-        font-size: 3em;
+        font-size: 3.7em;
     }
 
     .why-we-started p {
-        font-size: 1.7em;
+        margin: 50px 100px;
+        font-size: 1.3em;
     }
 
-    .sushi-images, .kanto-elements {
-        gap: 150px;
+    .logo-story img, .kanto-elements img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sushi-images {
+        padding: 0;
+        column-gap: 80px;
     }
 
     .sushi p {
-        font-size: 1.2em;
+        margin: 16px 40px;
+        font-size: 1.4em;
     }
 
     .kanto-elements {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, auto);
-        gap: 15px;
+        margin: 50px;
+        padding: 10px;
+        grid-template-columns: repeat(3, auto);
+        font-size: 1.1em;
+        gap: 30px;
     }
 
-    .element-group {
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .element-group hr {
-        border: none;
-        height: 2px;
-        background-color: #333;
-        margin: 15px 0; 
+    .kanto-elements img {
+        aspect-ratio: 3/4;
         width: 100%;
-    }
-
-    .element-group p {
-        font-size: 1em;
-        text-align: center;
-        margin: 5px;
-    }
-
-    .element-group p:nth-child(3) {
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-        align-self: center;
-        font-size: 3em;
-        letter-spacing: 15px;
+        margin: auto;
     }
 
     .element-text {
-        align-content: center;
+        align-self: start;
+        justify-items: center;
     }
 
+    .element-text hr {
+        width: 100%;
+        margin: auto;
+    }
 
+    .element-text p:nth-child(1) {
+        margin: 15px 0;
+        font-size: 1.1em;
+    }
+
+    .element-text p:nth-child(2) {
+        margin: 0;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        align-self: center;
+        letter-spacing: 15px;
+    }
+
+    #raw-steak {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #premium-ingredients {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #knife {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    #disciplined-technique {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #chopped-steak {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    #thoughtful-execution {
+        grid-column: 3;
+        grid-row: 2;
+    }
 
 
 
