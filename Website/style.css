@@ -784,6 +784,7 @@ main #home-main {
 /* ===== ABOUT US STYLING ===== */
 .black-bg {
     background-color: #0A0A0A;
+    color:#FFFFFF;
 } 
 
 #about-us-bg {
@@ -793,14 +794,33 @@ main #home-main {
     margin: 0 30px 30px 30px;
     padding: 100px;
     font-family: var(--main-font), sans-serif;
-    color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #japanese-about-text {
     margin: 0;
     writing-mode: vertical-rl;
     text-orientation: upright;
+    align-self: center;
+}
+
+#about-us-bg h4 {
+    color: #0A0A0A;
     text-align: center;
+    font-weight: 0;
+}
+
+#about-us-bg button {
+    background-color: #555550;
+    padding: 8px 5px;
+    color:#FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    font-family: var(--main-font), sans-serif;
 }
 
 
