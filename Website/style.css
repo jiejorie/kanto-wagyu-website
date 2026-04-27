@@ -101,7 +101,7 @@ header.nav-open .nav-bar {
 
 /* The menu icon's size */
 .nav-button img {
-    width: 25px;
+    width: auto;
     height: 15px;
 }
 
@@ -1616,6 +1616,11 @@ b {
         width: 9.5em;
     }
 
+    .overlay-cont button:hover {
+        transform: scale(1.05);
+        transition: 0.2s ease;
+    }
+
     #promotions h1 {
         text-align: left;
         margin: 0 1em;
@@ -1677,8 +1682,19 @@ b {
         margin: 0.5em;
     }
 
+    #view-menu-btn:hover {
+        transform: scale(1.05);
+        transition: 0.2s ease;
+    }
+
     .prev, .next {
         top: 113%;
+    }
+
+    .prev:active, .next:active {
+        filter: brightness(90%);
+        transform: scale(0.85);
+        transition: 0.2s ease;
     }
 
     .prev img, .next img{
@@ -1718,6 +1734,11 @@ b {
         box-shadow: 0 5px 5px #c9c9b7b5;
     }
 
+    .testimonial:hover {
+        transform: scale(1.05);
+        transition: 0.5s ease;
+    }
+
     .testimonial-content {
         font-size: 1.25em;
         padding: 1.5em 1em 1em 1em;
@@ -1736,7 +1757,19 @@ b {
         padding: 15em 0 2em 0;
     }
 
+    .share-experience-section button:hover {
+        filter: brightness(110%);
+        transform: scale(1.05);
+        transition: 0.2s ease;
+    }
+
     /* ===== MAIN STYLING (HOME PAGE: DELIVERY)===== */
+
+    .supported-deliveries a:hover {
+        background-color: hsl(0, 0%, 14%);
+        transform: scale(1.05);
+        transition: 0.3s ease;
+    }
 
     .supported-deliveries .left-delivery-brand a{
         width: 18em;
@@ -1784,6 +1817,12 @@ b {
         justify-self: start;
         grid-column: 1;
         width: 100%;
+    }
+
+    #book form button:hover {
+        background-color: hsl(0, 0%, 14%);
+        transform: scale(1.05);
+        transition: 0.2s ease;
     }
 
     /* ===== ABOUT US STYLING ===== */
