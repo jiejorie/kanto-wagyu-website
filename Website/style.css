@@ -1875,28 +1875,6 @@ b {
         padding: 30px 250px;
     }
 
-    /* ===== DIRECTIONS STYLING ===== */
-    /* .directions-sec {
-        display: grid;
-        grid-template-areas:
-        "header-desc header-desc"
-        "loc-details loc-maps";
-        grid-template-columns: 1fr 3fr;
-        border: 2px solid red;
-    }
-    
-    .header-desc {
-        grid-area: header-desc;
-    }
-
-    .loc-details {
-        grid-area: loc-details;
-    }
-
-    .loc-maps {
-        grid-area: loc-maps;
-    } */
-
     /* === FOR FOOTER STYLING === */
     .more-info {
         margin: 30px 70px;
