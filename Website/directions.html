@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="style.css"> <!-- External style sheet -->
     <link rel="icon" href="website-media/Header/kanto-main-logo.ico" type="image/x-icon"> <!-- Sets document icon -->
     <title>Kantō Wagyu Restaurant & Café • Directions</title>
+    <style>
+        .directions-sec {
+        display: grid;
+        grid-template-areas:
+        "header-desc header-desc"
+        "loc-details loc-maps";
+        grid-template-columns: 1fr 3fr;
+    }
+    
+    .header-desc {
+        grid-area: header-desc;
+    }
+
+    .loc-details {
+        grid-area: loc-details;
+    }
+
+    .loc-maps {
+        grid-area: loc-maps;
+    }
+    </style>
 </head>
 
 <body>
@@ -38,7 +59,7 @@
 
     <!-- Main Section -->
     <main>
-        <div class = "faq">
+        <div class = "directions-sec">
             <!-- header desc start -->
             <div class = "header-desc">
                 <h1>DIRECTIONS</h1>
@@ -46,14 +67,14 @@
             </div>
             <!-- header desc end -->
             <!-- loc details start -->
-            <div class = "loc-details">
+            <div class="loc-details">
                 <h3>ABU DHABI</h3>
                 <hr>
                 <p>BUILDING P-100 — SHOP 1 <br> SHEIKH ZAYED BIN SULTAN STREET <br> BEHIND ADCB HEAD OFFICE <br> AL DANNAH — ZONE 1</p>
             </div>
             <!-- loc details end -->
             <!-- loc maps start -->
-            <div class = "loc-maps">
+            <div class="loc-maps">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3630.802756283384!2d54.372539273566446!3d24.492290159894345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e67fa5ac65985%3A0x7c468b4ffab50834!2sKant%C5%8D%20Wagyu%20Restaurant%20and%20Caf%C3%A9!5e0!3m2!1sen!2sae!4v1777362889877!5m2!1sen!2sae" width="676" height="325" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <!-- loc maps end -->
