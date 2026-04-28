@@ -895,6 +895,16 @@ main #home-main {
     align-content: center;
 }
 
+/* ===== SUPPORT STYLING ===== */
+#support-bg {
+    background-image: url(website-media/Support/Support\ FAQ\ BG\ 1.png);
+    color: #660810;
+}
+
+#support-bg ul li a {
+    color: #660810;
+}
+
 
 
 /* ===== FOOTER STYLING ===== */
