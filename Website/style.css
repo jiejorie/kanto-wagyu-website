@@ -418,6 +418,41 @@ main #home-main {
 }
 
 
+
+.directions-display {
+    display: grid;
+    grid-template-areas:
+    "header-desc"
+    "loc-details loc-maps";
+    grid-template-columns: 1fr;
+}
+
+.directions-sec {
+    background-image: url("website-media/Directions/directions-page-bg-mobile.png");
+    width: 100%;
+    height: 50em;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    align-content: center;
+}
+    
+.header-desc {
+    text-align: center;
+    justify-self:center;
+    grid-area: header-desc;
+}
+
+.loc-details {
+    grid-area: loc-details;
+}
+
+.loc-maps {
+    grid-area: loc-maps;
+}
+
+
 /* ===== MAIN STYLING (HOME PAGE: PROMOTIONS)===== */
 
 #promotions {
@@ -804,7 +839,7 @@ main #home-main {
     background-image: url(website-media/Header/About\ Us\ Banner\ BG\ 1.png);
     background-repeat: no-repeat;
     background-position: bottom;
-    margin: 0 30px 30px 30px;
+    margin: 80px 30px 30px 30px;
     padding: 100px;
     display: flex;
     flex-direction: column;
@@ -894,6 +929,124 @@ main #home-main {
 .element-text {
     align-content: center;
 }
+
+/* ===== SUPPORT STYLING ===== */
+#support-nav {
+    background-color: #F1F1D3;
+}
+
+#support-nav ul li a {
+    color: #660810;
+}
+
+#questions {
+    background-image: url(website-media/Support/Support\ BG\ Mobile.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #660810;
+    font-family: var(--main-font-bold), sans-serif;
+    padding: 100px 20px 0;
+    display: grid;
+    place-items: center;
+}
+
+#questions h1 {
+    text-align: center;
+    font-size: 1.9em;
+    margin: 70px 20px;
+}
+
+.faq-list {
+    margin: 100px 20px 0;
+}
+
+.faq {
+    background: #FFFFF0;
+    border-radius: 0.5rem;
+    border: solid 1px #660810;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    gap: 15px;
+    font-size: 1em;
+}
+
+.question p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.question-btn {
+    font-size: 0.9em;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: #660810;
+    transition: all 0.3s linear;
+}
+
+.question-btn:hover {
+    transform: rotate(90deg);
+}
+
+.answer {
+    padding: 5px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.answer p {
+    margin-bottom: 0;
+}
+
+/* hide text */
+.answer {
+    display: none;
+}
+
+.show-text .answer {
+    display: block;
+}
+
+.minus-icon {
+    display: none;
+}
+
+.faq.show-text .plus-icon {
+    display: none;
+}
+
+.show-text .minus-icon {
+    display: inline;
+}
+
+#feedback {
+    background-image: url(website-media/Support/Contact\ Form\ BG\ Mobile.png);
+    background-position: top;
+    background-size: cover;
+    color: #FFFFF0;
+}
+
+.feedback-title {
+    text-align: center;
+    margin: 200px 20px;
+}
+
+#support-footer {
+    background: #31070B;
+}
+
+
+
+
+
 
 
 
@@ -1387,6 +1540,7 @@ b {
         letter-spacing: 30px;
         font-size: 3em;
     }
+
 
     .why-we-started, .sushi-images, .logo-story {
         padding: 30px 50px;

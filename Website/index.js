@@ -70,3 +70,18 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+// ===== SUPPORT FAQs =====
+function toggleQuestion(btn) {
+    // Calling the class used for the questions
+    const question = btn.closest(".faq");
+    const allQuestions = document.querySelectorAll(".faq");
+
+    // Hides the answers that are currently displayed
+    allQuestions.forEach(function(item) {
+        item.classList.remove("show-text");
+    });
+
+    // Displays the answer of the question being clicked
+    question.classList.add("show-text");
+}
