@@ -1041,6 +1041,7 @@ main #home-main {
     background-image: url(website-media/Support/Contact\ Form\ BG\ Mobile.png);
     background-position: top;
     background-size: cover;
+    justify-content: center;
     margin: 0;
     color: #FFFFF0;
 }
@@ -1061,15 +1062,26 @@ main #home-main {
     padding: 20px 60px;
 }
 
-#feedback form {
+#feedback-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    place-items: center;
     gap: 30px;
     padding: 3em 0;
 }
 
-#feedback form div {
+#input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#input-section div {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback-comment {
     display: flex;
     flex-direction: column;
 }
@@ -1079,7 +1091,7 @@ main #home-main {
     font-size: 0.9em;;
 }
 
-#feedback form input, textarea {
+#feedback-form input, textarea {
     margin: 0.7em 0 1em 0;
     width: 15em;
     padding: 0.5em 1em;
@@ -1087,6 +1099,7 @@ main #home-main {
     background-color: #D9D9D9;
     border: none;
     color: #0A0A0A;
+    transition: 0.3s ease;
 }
 
 #feedback form input:focus, textarea:focus {
@@ -1109,10 +1122,6 @@ main #home-main {
 
 #feedback form button:hover {
     background-color: #180507;
-}
-
-#user-info {
-    gap: 30px;
 }
 
 #support-footer {
@@ -1751,28 +1760,27 @@ b {
         padding: 20px 185px;
     }
 
-    #feedback form {
-        padding: 3em;
+    #input-section {
+        flex-direction: row;
     }
 
-    #feedback form label {
-        color: #FFFFF0;
-        font-size: 1em;;
+    #input-section div {
+        flex: 1;
+        width: auto;
     }
 
-    #feedback form textarea {
-        width: 600px;
+    #feedback-comment {
+        padding: 0;
+    }
+
+    #feedback-comment textarea {
+        width: 700px;
     }
 
     #feedback form button {
-        width: 170px;
+        width: 150px;
         height: 50px;
         font-size: 1.2em;
-    }
-
-    #user-info {
-        display: flex;
-        flex-direction: row;
     }
 
     /* ===== FOOTER STYLING ===== */
@@ -2153,6 +2161,42 @@ b {
 
     .why-we-started, .logo-story {
         padding: 30px 250px;
+    }
+
+    /* ===== SUPPORT STYLING ===== */
+    #questions h1 {
+        text-align: center;
+        font-size: 4em;
+        margin: 130px 20px 140px;
+    }
+
+    .faq-list {
+        margin: 50px;
+    }
+
+    .faq {
+        width: 600px;
+        gap: 15px;
+    }
+
+    .question {
+        font-size: 1.6em;
+        padding: 10px;
+    }
+
+    .answer p {
+        font-size: 1.2em;
+        margin: 10px;
+    }
+
+    #feedback h1 {
+        font-size: 4em;
+    }
+
+    #feedback h2 {
+        font-size: 1.3em;
+        padding: 20px 380px;
+        line-height: 1.5;
     }
 
     /* === FOR FOOTER STYLING === */
