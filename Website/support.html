@@ -10,11 +10,11 @@
     <title>Kantō Wagyu Restaurant & Café • Support</title>
 </head>
 
-<body class="bg-img" id="support-bg">
+<body>
     <!-- Header Section -->
     <header>
         <!-- Navigation  -->
-        <nav class="nav-bar">
+        <nav class="nav-bar" id="support-nav">
             <!-- Logo that leads to Home -->
             <a href="index.html">
                 <img src="website-media/Support/Kanto Nav Logo.png" class="header-logo" alt="Kanto Logo" style="height: auto;">
@@ -39,7 +39,7 @@
 
     <!-- Main Section -->
     <main>
-        <section class="questions">
+        <section id="questions">
             <h1>FREQUENTLY ASKED QUESTIONS</h1>
 
             <div class="faq-list">
@@ -188,10 +188,41 @@
                 </article>
             </div>
         </section>
+
+        <section id="feedback">
+            <div class="feedback-title">
+                <h1>FEEDBACK FORM</h1>
+                <h2>HELP US CONTINUOUSLY IMPROVE AND REFINE THE EXPERIENCE WE OFFER BY SHARING YOUR THOUGHTS ON OUR SERVICES.</h2>
+            </div>
+
+            <form id="feedback-form" action="#">
+                <div class="feedback-first-name">
+                    <label for="First Name">First Name*</label>
+                    <input type="text" name="firstname" id="f-firstname" placeholder="Your First Name" required>
+                </div>
+
+                <div class="feedback-last-name">
+                    <label for="Last Name">Last Name*</label>
+                    <input type="text" name="lastname" id="f-lastname" placeholder="Your Last Name" required>
+                </div>
+
+                <div class="feedback-email">
+                    <label for="Email">Email*</label>
+                    <input type="text" name="email" id="f-email" placeholder="Your Email" required>
+                </div>
+
+                <div class="feedback-comment">
+                    <label for="Comment">Write Down a Comment*</label>
+                    <input type="textbox" name="comment" id="f-comment" placeholder="Type here..." required>
+                </div>
+
+                <button type="submit" value="send">SUBMIT</button>
+            </form>
+        </section>
     </main>
     
     <!-- Footer Section -->
-    <footer>
+    <footer id="support-footer">
         <div class="more-info">
 
             <!-- Kanto Wagyu Contact Information -->
