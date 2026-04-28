@@ -418,6 +418,41 @@ main #home-main {
 }
 
 
+
+.directions-display {
+    display: grid;
+    grid-template-areas:
+    "header-desc"
+    "loc-details loc-maps";
+    grid-template-columns: 1fr;
+}
+
+.directions-sec {
+    background-image: url("website-media/Directions/directions-page-bg-mobile.png");
+    width: 100%;
+    height: 50em;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    align-content: center;
+}
+    
+.header-desc {
+    text-align: center;
+    justify-self:center;
+    grid-area: header-desc;
+}
+
+.loc-details {
+    grid-area: loc-details;
+}
+
+.loc-maps {
+    grid-area: loc-maps;
+}
+
+
 /* ===== MAIN STYLING (HOME PAGE: PROMOTIONS)===== */
 
 #promotions {
@@ -997,6 +1032,7 @@ main #home-main {
 
 
 
+
 /* ===== FOOTER STYLING ===== */
 footer {
     background-color: #101010;
@@ -1487,6 +1523,7 @@ b {
         letter-spacing: 30px;
         font-size: 3em;
     }
+
 
     .why-we-started, .sushi-images, .logo-story {
         padding: 30px 50px;
