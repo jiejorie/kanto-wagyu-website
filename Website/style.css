@@ -51,7 +51,6 @@ body {
     flex-direction: column;
 }
 
-
 /* ===== HEADER SECTION STYLING ===== */
 
 /* Header Backgrounds Styling */
@@ -66,16 +65,25 @@ body {
 }
 
 /* The spacing between the header logo and navigation button */
-header .nav-bar {
+
+
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: transparent;
+    background: linear-gradient(rgba(0, 0, 0, 0.726), transparent);
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+header nav .scrolled {
+    background-color: black;
 }
 
 /* The background color for when the navigation is opened */
-header.nav-open .nav-bar {
+header.nav-open nav {
     background: #0A0A0A;
 }
 
@@ -102,7 +110,7 @@ header.nav-open .nav-bar {
 
 /* The menu icon's size */
 .nav-button img {
-    width: 25px;
+    width: auto;
     height: 15px;
 }
 
@@ -174,6 +182,7 @@ header.nav-open .nav-bar {
 
 .overlay-cont img {
     height: 166px;
+    margin-top: 5em;
 }
 
 .overlay-cont button {
@@ -221,7 +230,7 @@ header.nav-open .nav-bar {
 }
 
 .title h1 {
-    margin: 0;
+    margin: 3em 0 0 0;
     font-size: 25px;
 }
 
@@ -423,15 +432,18 @@ main #home-main {
 }
 
 .promotion-offer {display: none}
-.promotion-offer picture {vertical-align: middle;}
+.promotion-offer picture {
+    vertical-align: middle;
+    
+}
 
 .promotion-offer picture img, .promotion-offer picture source {
     animation: offersAnim 1s ease;
+    max-width: 30em;
 }
 
 /* Slideshow container */
 .slideshow-container {
-    /* max-width: 1000px; */
     position: relative;
     margin: auto;
 }
@@ -783,26 +795,115 @@ main #home-main {
 
 /* ===== ABOUT US STYLING ===== */
 .black-bg {
-    background-color: #0A0A0A;
+    background: #0A0A0A;
+    color:#FFFFFF;
+    font-family: var(--tertiary-font), sans-serif;
 } 
 
 #about-us-bg {
-    background-image: url(website-media/Header/home-bg.png);
+    background-image: url(website-media/Header/About\ Us\ Banner\ BG\ 1.png);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: bottom;
     margin: 0 30px 30px 30px;
     padding: 100px;
-    font-family: var(--main-font), sans-serif;
-    color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-us-bg h4 {
+    color: #FFFFF0;
+    text-align: center;
+    font-size: 12px;
+}
+
+#about-us-bg button {
+    background-color: #FFFFF0;
+    padding: 10px 15px;
+    margin: 10px;
+    color:#0A0A0A;
+    text-align: center;
+    font-size: 12px;
+    border: none;
+    border-radius: 3px;
+}
+
+#about-us-bg button:hover {
+    background-color: #737373;
 }
 
 #japanese-about-text {
     margin: 0;
     writing-mode: vertical-rl;
     text-orientation: upright;
+    align-self: center;
+    letter-spacing: 15px;
+}
+
+.why-we-started, .sushi-images, .logo-story {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.why-we-started h2, .logo-story h2 {
+    font-family: var(--main-font), sans-serif;
+    font-size: 1.9em;
+    word-spacing: 5px;
+    font-weight: 900;
     text-align: center;
 }
 
+.why-we-started p {
+    text-align: center;
+}
+
+.logo-story img, .kanto-elements img {
+    width: 100%;
+    height: auto;
+}
+
+.sushi-images {
+    padding: 3px;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.sushi {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    column-gap: 20px;
+}
+
+.kanto-elements {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: var(--japanese-font), sans-serif;
+    justify-items: center;
+    font-size: 0.7em;
+    gap: 10px;
+}
+
+.element-text {
+    align-content: center;
+}
+
+/* ===== SUPPORT STYLING ===== */
+#support-bg {
+    background-image: url(website-media/Support/Support\ FAQ\ BG\ 1.png);
+    color: #660810;
+}
+
+#support-bg ul li a {
+    color: #660810;
+}
 
 
 
@@ -1052,6 +1153,10 @@ b {
         opacity: 0.5;
     }
 
+    .promotion-offer picture img, .promotion-offer picture source {
+        max-width: 85%;
+    }
+
     .offer-details {
         font-size: 1.33em;
         gap: 1.5em;
@@ -1069,7 +1174,7 @@ b {
     .prev, .next {
         cursor: pointer;
         position: absolute;
-        top: 117%;
+        top: 50%;
         margin-top: 0px;
     }
 
@@ -1078,11 +1183,11 @@ b {
     }
 
     .next {
-        right: 43%;
+        right: 0;
     }
 
     .prev {
-        left: 43%;
+        left: 0;
     }
 
     #view-menu-btn {
@@ -1280,6 +1385,116 @@ b {
         justify-self: center;
     }
 
+    /* ===== ABOUT US STYLING ===== */
+    #about-us-bg h4 {
+        font-size: 15px;
+    }
+
+    #about-us-bg button {
+        font-size: 15px;
+    }
+
+    #japanese-about-text {
+        letter-spacing: 30px;
+        font-size: 3em;
+    }
+
+    .why-we-started, .sushi-images, .logo-story {
+        padding: 30px 50px;
+        gap: 20px;
+    }
+
+    .why-we-started h2, .logo-story h2 {
+        font-size: 3.7em;
+    }
+
+    .why-we-started p {
+        margin: 50px 100px;
+        font-size: 1.3em;
+    }
+
+    .logo-story img, .kanto-elements img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sushi-images {
+        padding: 0;
+        column-gap: 80px;
+    }
+
+    .sushi p {
+        margin: 16px 40px;
+        font-size: 1.4em;
+    }
+
+    .kanto-elements {
+        margin: 50px;
+        padding: 10px;
+        grid-template-columns: repeat(3, auto);
+        font-size: 1.1em;
+        gap: 30px;
+    }
+
+    .kanto-elements img {
+        aspect-ratio: 3/4;
+        width: 100%;
+        margin: auto;
+    }
+
+    .element-text {
+        align-self: start;
+        justify-items: center;
+    }
+
+    .element-text hr {
+        width: 100%;
+        margin: auto;
+    }
+
+    .element-text p:nth-child(1) {
+        margin: 15px 0;
+        font-size: 1.1em;
+    }
+
+    .element-text p:nth-child(2) {
+        margin: 0;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        align-self: center;
+        letter-spacing: 15px;
+    }
+
+    #raw-steak {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #premium-ingredients {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #knife {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    #disciplined-technique {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #chopped-steak {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    #thoughtful-execution {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
     /* ===== FOOTER STYLING ===== */
     .more-info {
         margin: 10px 30px;
@@ -1329,8 +1544,13 @@ b {
 @media (min-width: 1280px) {
     /* === FOR NAVIGATION LINKS === */
     .header-logo {
-        width: 80px;
+        width: auto;
         height: 30px;
+    }
+
+    .header-logo:hover {
+        transform: scale(1.01);
+        transition: 0.2s ease;
     }
 
     .nav-links ul li a {
@@ -1429,9 +1649,18 @@ b {
         width: 9.5em;
     }
 
+    .overlay-cont button:hover {
+        transform: scale(1.05);
+        transition: 0.2s ease;
+    }
+
     #promotions h1 {
         text-align: left;
         margin: 0 1em;
+    }
+
+    .promotion-offer picture img, .promotion-offer picture source {
+        max-width: 100%;
     }
 
     .slideshow-container {
@@ -1490,8 +1719,19 @@ b {
         margin: 0.5em;
     }
 
+    #view-menu-btn:hover {
+        transform: scale(1.05);
+        transition: 0.2s ease;
+    }
+
     .prev, .next {
         top: 113%;
+    }
+
+    .prev:active, .next:active {
+        filter: brightness(90%);
+        transform: scale(0.85);
+        transition: 0.2s ease;
     }
 
     .prev img, .next img{
@@ -1531,6 +1771,11 @@ b {
         box-shadow: 0 5px 5px #c9c9b7b5;
     }
 
+    .testimonial:hover {
+        transform: scale(1.05);
+        transition: 0.5s ease;
+    }
+
     .testimonial-content {
         font-size: 1.25em;
         padding: 1.5em 1em 1em 1em;
@@ -1549,7 +1794,19 @@ b {
         padding: 15em 0 2em 0;
     }
 
+    .share-experience-section button:hover {
+        filter: brightness(110%);
+        transform: scale(1.05);
+        transition: 0.2s ease;
+    }
+
     /* ===== MAIN STYLING (HOME PAGE: DELIVERY)===== */
+
+    .supported-deliveries a:hover {
+        background-color: hsl(0, 0%, 14%);
+        transform: scale(1.05);
+        transition: 0.3s ease;
+    }
 
     .supported-deliveries .left-delivery-brand a{
         width: 18em;
@@ -1597,6 +1854,25 @@ b {
         justify-self: start;
         grid-column: 1;
         width: 100%;
+    }
+
+    #book form button:hover {
+        background-color: hsl(0, 0%, 14%);
+        transform: scale(1.05);
+        transition: 0.2s ease;
+    }
+
+    /* ===== ABOUT US STYLING ===== */
+    #about-us-bg {
+        background-size: cover;
+    }
+
+    #about-us-bg button {
+        font-size: 18px;
+    }
+
+    .why-we-started, .logo-story {
+        padding: 30px 250px;
     }
 
     /* === FOR FOOTER STYLING === */
