@@ -65,16 +65,25 @@ body {
 }
 
 /* The spacing between the header logo and navigation button */
-header .nav-bar {
+
+
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: transparent;
+    background: linear-gradient(rgba(0, 0, 0, 0.726), transparent);
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+header nav .scrolled {
+    background-color: black;
 }
 
 /* The background color for when the navigation is opened */
-header.nav-open .nav-bar {
+header.nav-open nav {
     background: #0A0A0A;
 }
 
@@ -101,7 +110,7 @@ header.nav-open .nav-bar {
 
 /* The menu icon's size */
 .nav-button img {
-    width: 25px;
+    width: auto;
     height: 15px;
 }
 
@@ -173,6 +182,7 @@ header.nav-open .nav-bar {
 
 .overlay-cont img {
     height: 166px;
+    margin-top: 5em;
 }
 
 .overlay-cont button {
@@ -220,7 +230,7 @@ header.nav-open .nav-bar {
 }
 
 .title h1 {
-    margin: 0;
+    margin: 3em 0 0 0;
     font-size: 25px;
 }
 
@@ -422,15 +432,18 @@ main #home-main {
 }
 
 .promotion-offer {display: none}
-.promotion-offer picture {vertical-align: middle;}
+.promotion-offer picture {
+    vertical-align: middle;
+    
+}
 
 .promotion-offer picture img, .promotion-offer picture source {
     animation: offersAnim 1s ease;
+    max-width: 30em;
 }
 
 /* Slideshow container */
 .slideshow-container {
-    /* max-width: 1000px; */
     position: relative;
     margin: auto;
 }
@@ -1129,6 +1142,10 @@ b {
         opacity: 0.5;
     }
 
+    .promotion-offer picture img, .promotion-offer picture source {
+        max-width: 85%;
+    }
+
     .offer-details {
         font-size: 1.33em;
         gap: 1.5em;
@@ -1146,7 +1163,7 @@ b {
     .prev, .next {
         cursor: pointer;
         position: absolute;
-        top: 117%;
+        top: 50%;
         margin-top: 0px;
     }
 
@@ -1155,11 +1172,11 @@ b {
     }
 
     .next {
-        right: 43%;
+        right: 0;
     }
 
     .prev {
-        left: 43%;
+        left: 0;
     }
 
     #view-menu-btn {
@@ -1516,8 +1533,13 @@ b {
 @media (min-width: 1280px) {
     /* === FOR NAVIGATION LINKS === */
     .header-logo {
-        width: 80px;
+        width: auto;
         height: 30px;
+    }
+
+    .header-logo:hover {
+        transform: scale(1.01);
+        transition: 0.2s ease;
     }
 
     .nav-links ul li a {
@@ -1616,9 +1638,18 @@ b {
         width: 9.5em;
     }
 
+    .overlay-cont button:hover {
+        transform: scale(1.05);
+        transition: 0.2s ease;
+    }
+
     #promotions h1 {
         text-align: left;
         margin: 0 1em;
+    }
+
+    .promotion-offer picture img, .promotion-offer picture source {
+        max-width: 100%;
     }
 
     .slideshow-container {
@@ -1677,8 +1708,19 @@ b {
         margin: 0.5em;
     }
 
+    #view-menu-btn:hover {
+        transform: scale(1.05);
+        transition: 0.2s ease;
+    }
+
     .prev, .next {
         top: 113%;
+    }
+
+    .prev:active, .next:active {
+        filter: brightness(90%);
+        transform: scale(0.85);
+        transition: 0.2s ease;
     }
 
     .prev img, .next img{
@@ -1718,6 +1760,11 @@ b {
         box-shadow: 0 5px 5px #c9c9b7b5;
     }
 
+    .testimonial:hover {
+        transform: scale(1.05);
+        transition: 0.5s ease;
+    }
+
     .testimonial-content {
         font-size: 1.25em;
         padding: 1.5em 1em 1em 1em;
@@ -1736,7 +1783,19 @@ b {
         padding: 15em 0 2em 0;
     }
 
+    .share-experience-section button:hover {
+        filter: brightness(110%);
+        transform: scale(1.05);
+        transition: 0.2s ease;
+    }
+
     /* ===== MAIN STYLING (HOME PAGE: DELIVERY)===== */
+
+    .supported-deliveries a:hover {
+        background-color: hsl(0, 0%, 14%);
+        transform: scale(1.05);
+        transition: 0.3s ease;
+    }
 
     .supported-deliveries .left-delivery-brand a{
         width: 18em;
@@ -1784,6 +1843,12 @@ b {
         justify-self: start;
         grid-column: 1;
         width: 100%;
+    }
+
+    #book form button:hover {
+        background-color: hsl(0, 0%, 14%);
+        transform: scale(1.05);
+        transition: 0.2s ease;
     }
 
     /* ===== ABOUT US STYLING ===== */

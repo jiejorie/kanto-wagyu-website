@@ -62,7 +62,7 @@
                             <p>1 RAMEN</p>
                         </div>
                     </div>
-                    <picture>
+                    <picture onclick="window.location.href = 'menu.html#promos';">
                         <source media="(min-width: 1280px)"
                             srcset="website-media\Home\offers-carousel\unli-wagyu\unli-wagyu-desktop.png">
                         <source media="(min-width: 800px)"
@@ -81,7 +81,7 @@
                             <p>1 RAMEN</p>
                         </div>
                     </div>
-                    <picture>
+                    <picture onclick="window.location.href = 'menu.html#promos';">
                         <source media="(min-width: 1280px)"
                             srcset="website-media\Home\offers-carousel\unli-wagyu\unli-wagyu-desktop.png">
                         <source media="(min-width: 800px)"
@@ -100,7 +100,7 @@
                             <p>1 RAMEN</p>
                         </div>
                     </div>
-                    <picture>
+                    <picture onclick="window.location.href = 'menu.html#promos';">
                         <source media="(min-width: 1280px)"
                             srcset="website-media\Home\offers-carousel\unli-wagyu\unli-wagyu-desktop.png">
                         <source media="(min-width: 800px)"
@@ -216,39 +216,43 @@
         <section id="book">
             <h1>RESERVATION</h1>
             <h2>DINE WITH US — RESERVE WITH US NOW</h2>
-            <form action="mail.php" method="post">
+            <form id="form" action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="0e348fdd-46d6-4855-92d9-6eb8d5ed67f2">
+                <input type="hidden" name="subject" value="Table Reservation Inquiry">
+                <input type="hidden" name="from_name" value="Customer">
 
                 <div class="book-first-name">
                     <label for="First Name">Full Name*</label>
-                    <input type="text" name="bname" id="book-first-name-input" placeholder="Your Full Name">
+                    <input type="text" name="name" id="bname" placeholder="Your Full Name" required>
                 </div>
 
                 <div class="book-phone-number">
                     <label for="Phone Number">Phone Number*</label>
-                    <input type="number" name="bphonenumber" id="book-phone-number-input" placeholder="Your Phone No.">
+                    <input type="number" name="mobile" id="bphonenumber" placeholder="Your Phone No." required>
                 </div>
 
                 <div class="book-email">
                     <label for="Email">Email*</label>
-                    <input type="text" name="bemail" id="book-email-input" placeholder="Your Email">
+                    <input type="text" name="email" id="bemail" placeholder="Your Email" required>
                 </div>
 
                 <div class="book-date">
                     <label for="Date">Date*</label>
-                    <input type="date" name="bdate" id="book-date-input">
+                    <input type="date" name="date" id="bdate" required>
                 </div>
 
                 <div class="book-time">
                     <label for="Time">Time*</label>
-                    <input type="time" name="btime" id="book-time-input">
+                    <input type="time" name="time" id="btime" required>
                 </div>
 
                 <div class="book-guests">
                     <label for="Guest Size">Guest Size*</label>
-                    <input type="number" name="bguest" id="book-guests-input" placeholder="Enter Amount">
+                    <input type="number" name="guest" id="bguest" placeholder="Enter Amount" required>
                 </div>
 
-                <button type="submit">SUBMIT</button>
+                <button type="submit" value="send">SUBMIT</button>
             </form>
         </section>
     </main>
