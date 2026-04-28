@@ -896,12 +896,17 @@ main #home-main {
 }
 
 /* ===== SUPPORT STYLING ===== */
-#support-nav {
-    background-color: #F1F1D3;
+#support-bg {
+    background: none;
 }
 
-#support-nav ul li a {
-    color: #660810;
+#support-bg ul li a {
+    color: #660810
+}
+
+#support-body {
+    background: none;
+    font-family: var(--main-font-bold), sans-serif;
 }
 
 #questions {
@@ -910,8 +915,8 @@ main #home-main {
     background-size: cover;
     background-repeat: no-repeat;
     color: #660810;
-    font-family: var(--main-font-bold), sans-serif;
-    padding: 100px 20px 0;
+    margin: 0;
+    padding: 100px 20px;
     display: grid;
     place-items: center;
 }
@@ -948,6 +953,7 @@ main #home-main {
 .question p {
     margin: 0;
     font-weight: 700;
+    line-height: 1.5;
 }
 
 .question-btn {
@@ -966,9 +972,13 @@ main #home-main {
 .answer {
     padding: 5px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
+    line-height: 1.5;
 }
 .answer p {
     margin-bottom: 0;
+    font-family: var(--main-font-medium);
+    font-weight: 100;
+    font-size: 0.8em;
 }
 
 /* hide text */
@@ -996,12 +1006,87 @@ main #home-main {
     background-image: url(website-media/Support/Contact\ Form\ BG\ Mobile.png);
     background-position: top;
     background-size: cover;
+    justify-content: center;
+    margin: 0;
     color: #FFFFF0;
 }
 
-.feedback-title {
+#feedback h1 {
     text-align: center;
-    margin: 200px 20px;
+    font-size: 2em;
+    margin: 0;
+    padding: 70px 20px 0;
+}
+
+#feedback h2 {
+    font-family: var(--main-font-medium);
+    text-align: center;
+    font-size: 1em;
+    font-weight: 100;
+    margin: 0;
+    padding: 20px 60px;
+}
+
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 30px;
+    padding: 3em 0;
+}
+
+#input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#input-section div {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback-comment {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback form label {
+    color: #FFFFF0;
+    font-size: 0.9em;;
+}
+
+#feedback-form input, textarea {
+    margin: 0.7em 0 1em 0;
+    width: 15em;
+    padding: 0.5em 1em;
+    font-family: var(--secondary-font), sans-serif;
+    background-color: #D9D9D9;
+    border: none;
+    color: #0A0A0A;
+    transition: 0.3s ease;
+}
+
+#feedback form input:focus, textarea:focus {
+    box-shadow: 0px 0px 10px #B93B41;
+    font-weight: 500;
+    outline: solid 0.5px white;
+}
+
+#feedback form button {
+    font-family: var(--main-font-bold), sans-serif;
+    width: 130px;
+    height: 40px;
+    background-color: #31070B;
+    border: none;
+    font-size: 1em;
+    color: white;
+    padding: 0;
+    margin: 1em 0;
+}
+
+#feedback form button:hover {
+    background-color: #180507;
 }
 
 #support-footer {
@@ -1702,6 +1787,74 @@ b {
         font-family: var(--main-font), sans-serif;
         font-size: 0.8em;
     }
+        
+    /* ===== SUPPORT STYLING ===== */
+    
+    #questions {
+        background-image: url(website-media/Support/Support\ FAQ\ BG\ 1.png);
+    }
+
+    #questions h1 {
+        text-align: center;
+        font-size: 3em;
+        margin: 70px 20px 150px;
+    }
+
+    .faq-list {
+        margin: 0 20px;
+    }
+
+    .faq {
+        width: 500px;
+    }
+
+    .question {
+        font-size: 1.2em;
+    }
+
+    .question-btn {
+        font-size: 1em;
+    }
+
+    .answer p {
+        font-size: 0.9em;
+    }
+
+    #feedback {
+        background-image: url(website-media/Support/Contact\ Form\ BG\ 1.png);
+    }
+
+    #feedback h1 {
+        font-size: 3em;
+    }
+
+    #feedback h2 {
+        font-size: 1.1em;
+        padding: 20px 185px;
+    }
+
+    #input-section {
+        flex-direction: row;
+    }
+
+    #input-section div {
+        flex: 1;
+        width: auto;
+    }
+
+    #feedback-comment {
+        padding: 0;
+    }
+
+    #feedback-comment textarea {
+        width: 700px;
+    }
+
+    #feedback form button {
+        width: 150px;
+        height: 50px;
+        font-size: 1.2em;
+    }
 
     /* ===== FOOTER STYLING ===== */
     .more-info {
@@ -1748,6 +1901,7 @@ b {
         grid-column: 3;
     }
 }
+    
 
 @media (min-width: 1280px) {
     /* === FOR NAVIGATION LINKS === */
@@ -2110,6 +2264,43 @@ b {
     .loc-details .loc-maps {
         min-height: 25.5vw;
         min-width: 50vw;
+    }
+
+    /* ===== SUPPORT STYLING ===== */
+    
+    #questions h1 {
+        text-align: center;
+        font-size: 4em;
+        margin: 130px 20px 140px;
+    }
+
+    .faq-list {
+        margin: 50px;
+    }
+
+    .faq {
+        width: 600px;
+        gap: 15px;
+    }
+
+    .question {
+        font-size: 1.6em;
+        padding: 10px;
+    }
+
+    .answer p {
+        font-size: 1.2em;
+        margin: 10px;
+    }
+
+    #feedback h1 {
+        font-size: 4em;
+    }
+
+    #feedback h2 {
+        font-size: 1.3em;
+        padding: 20px 380px;
+        line-height: 1.5;
     }
 
     /* === FOR FOOTER STYLING === */
