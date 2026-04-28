@@ -418,26 +418,26 @@ main #home-main {
 }
 
 .directions-sec {
-        display: grid;
-        grid-template-areas:
-        "header-desc header-desc"
-        "loc-details loc-maps";
-        grid-template-columns: 1fr 3fr;
-    }
+    display: grid;
+    grid-template-areas:
+    "header-desc header-desc"
+    "loc-details loc-maps";
+    grid-template-columns: 1fr 3fr;
+}
     
-    .header-desc {
-        text-align: center;
-        justify-self:center;
-        grid-area: header-desc;
-    }
+.header-desc {
+    text-align: center;
+    justify-self:center;
+    grid-area: header-desc;
+}
 
-    .loc-details {
-        grid-area: loc-details;
-    }
+.loc-details {
+    grid-area: loc-details;
+}
 
-    .loc-maps {
-        grid-area: loc-maps;
-    }
+.loc-maps {
+    grid-area: loc-maps;
+}
 
 
 /* ===== MAIN STYLING (HOME PAGE: PROMOTIONS)===== */
