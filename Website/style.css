@@ -417,12 +417,25 @@ main #home-main {
     display: none;
 }
 
-.directions-sec {
+
+
+.directions-display {
     display: grid;
     grid-template-areas:
-    "header-desc header-desc"
+    "header-desc"
     "loc-details loc-maps";
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr;
+}
+
+.directions-sec {
+    background-image: url("website-media/Directions/directions-page-bg-mobile.png");
+    width: 100%;
+    height: 50em;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    align-content: center;
 }
     
 .header-desc {
@@ -1420,6 +1433,7 @@ b {
         letter-spacing: 30px;
         font-size: 3em;
     }
+
 
     .why-we-started, .sushi-images, .logo-story {
         padding: 30px 50px;
