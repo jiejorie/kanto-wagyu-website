@@ -17,7 +17,7 @@
         <nav class="nav-bar">
             <!-- Logo that leads to Home -->
             <a href="index.html">
-                <img src="website-media/Support/Kanto H Logo.png" class="header-logo" alt="Kanto Logo">
+                <img src="website-media/Support/Kanto Nav Logo.png" class="header-logo" alt="Kanto Logo" style="height: auto;">
             </a>
 
             <!-- Navigation Links -->
@@ -32,7 +32,7 @@
 
             <!-- Navigation button for mobile -->
             <button class="nav-button" id="nav-toggle">
-                <img src="website-media/Support/Mobile Navigation Bar.png" alt="nav button">
+                <img src="website-media/Support/Mobile Navigation Bar.png" alt="nav button" style="height: auto;">
             </button>
         </nav>
     </header>
@@ -40,16 +40,13 @@
     <!-- Main Section -->
     <main>
         <section class="questions">
-            <div class="faq-title">
-                <h1>FREQUENTLY ASKED QUESTIONS</h1>
-                <h2>DINE WITH US — JUST AROUND THE CORNER</h2>
-            </div>
+            <h1>FREQUENTLY ASKED QUESTIONS</h1>
 
             <div class="faq-list">
                 <article class="faq">
                     <div class="question">
                         <p>WHAT ARE YOUR HOURS OF OPERATION?</p>
-                        <button type ="button" class="question-btn">
+                        <button type ="button" class="question-btn" onclick="toggleQuestion(this)">
                             <span class="plus-icon">
                                 <i class="far fa-plus-square"></i>
                             </span>
@@ -61,6 +58,132 @@
 
                     <div class="answer">
                         <p>SUNDAY - SATURDAY: 11:00 AM - 11:00 PM</p>
+                    </div>
+                </article>
+
+                <article class="faq">
+                    <div class="question">
+                        <p>DO YOU ACCEPT RESERVATIONS?</p>
+                        <button type ="button" class="question-btn" onclick="toggleQuestion(this)">
+                            <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="answer">
+                        <p>Yes, you can book a reservation by visiting the homepage and click the 'Book Now' button. It will direct you to a form where you can reserve a table for any occasion.</p>
+                    </div>
+                </article>
+
+                <article class="faq">
+                    <div class="question">
+                        <p>DO YOU OFFER DELIVERY OR TAKEAWAY?</p>
+                        <button type ="button" class="question-btn" onclick="toggleQuestion(this)">
+                            <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="answer">
+                        <p>Yes, you can order for delivery by visiting the menu page, scrolling down until you see a delivery section and click the 'Order Now' button. It will direct you to a list of our delivery partners to bring you food straight to your door.</p>
+                    </div>
+                </article>
+
+                <article class="faq">
+                    <div class="question">
+                        <p>DO YOU OFFER VEGETARIAN OR VEGAN OPTIONS?</p>
+                        <button type ="button" class="question-btn" onclick="toggleQuestion(this)">
+                            <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="answer">
+                        <p>We offer a selection of vegetarian-friendly dishes. However, these options are limited; please ask our team for guidance.</p>
+                    </div>
+                </article>
+
+                <article class="faq">
+                    <div class="question">
+                        <p>DO YOU ACCOMMODATE FOOD ALLERGIES?</p>
+                        <button type ="button" class="question-btn" onclick="toggleQuestion(this)">
+                            <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="answer">
+                        <p>Yes, please inform our team of any dietary restrictions when ordering, and we will do our best to accommodate your needs. While we take care in preparation, we cannot guarantee a completely allergen-free environment.</p>
+                    </div>
+                </article>
+
+                <article class="faq">
+                    <div class="question">
+                        <p>WHAT MAKES YUR WAGYU SPECIAL?</p>
+                        <button type ="button" class="question-btn" onclick="toggleQuestion(this)">
+                            <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="answer">
+                        <p>Our wagyu is carefully selected for its quality and balance, offering exceptional flavor with thoughtful value.</p>
+                    </div>
+                </article>
+
+                <article class="faq">
+                    <div class="question">
+                        <p>IS PARKING AVAILABLE NEARBY?</p>
+                        <button type ="button" class="question-btn" onclick="toggleQuestion(this)">
+                            <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="answer">
+                        <p>Yes, there is available parking in front and around the restaurant.</p>
+                    </div>
+                </article>
+
+                <article class="faq">
+                    <div class="question">
+                        <p>DO YOU OFFER OUTDOOR SEATING?</p>
+                        <button type ="button" class="question-btn" onclick="toggleQuestion(this)">
+                            <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="answer">
+                        <p>Yes, we offer outdoor seating in a terrace prompted outside the restaurant. We recommend dining in the terrace during winter.</p>
                     </div>
                 </article>
             </div>

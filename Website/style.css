@@ -804,7 +804,7 @@ main #home-main {
     background-image: url(website-media/Header/About\ Us\ Banner\ BG\ 1.png);
     background-repeat: no-repeat;
     background-position: bottom;
-    margin: 0 30px 30px 30px;
+    margin: 80px 30px 30px 30px;
     padding: 100px;
     display: flex;
     flex-direction: column;
@@ -897,13 +897,103 @@ main #home-main {
 
 /* ===== SUPPORT STYLING ===== */
 #support-bg {
-    background-image: url(website-media/Support/Support\ FAQ\ BG\ 1.png);
+    background-image: url(website-media/Support/Support\ BG\ Mobile.png);
+    background-position: top;
     color: #660810;
 }
 
 #support-bg ul li a {
     color: #660810;
 }
+
+.questions {
+    font-family: var(--main-font-bold), sans-serif;
+    margin: 100px 20px;
+    display: grid;
+    place-items: center;
+}
+
+.questions h1 {
+    text-align: center;
+    font-size: 1.9em;
+    margin: 150px 20px;
+}
+
+.faq-list {
+    margin: 0 20px;
+}
+
+.faq {
+    background: #FFFFF0;
+    border-radius: 0.5rem;
+    border: solid 1px #660810;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    gap: 15px;
+    font-size: 1em;
+}
+
+.question p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.question-btn {
+    font-size: 0.9em;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: #660810;
+    transition: all 0.3s linear;
+}
+
+.question-btn:hover {
+    transform: rotate(90deg);
+}
+
+.answer {
+    padding: 5px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.answer p {
+    margin-bottom: 0;
+}
+
+/* hide text */
+.answer {
+    display: none;
+}
+
+.show-text .answer {
+    display: block;
+}
+
+.minus-icon {
+    display: none;
+}
+
+.faq.show-text .plus-icon {
+    display: none;
+}
+
+.show-text .minus-icon {
+    display: inline;
+}
+
+
+
+
+
+
 
 
 
