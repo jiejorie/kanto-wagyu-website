@@ -93,7 +93,7 @@ header.nav-open nav {
 
 /* Navigation button's styling and spacing */
 .nav-button {
-    margin: 30px;
+    margin: 20px 30px;
     background: none;
     border: none;
     cursor: pointer;
@@ -114,7 +114,7 @@ header.nav-open nav {
 /* The navigation links' styling when it's opened */
 .nav-links{
     position: absolute;
-    top: 5em;
+    top: 4em;
     left: 0;
     width: 100%;
     max-height: 0;
@@ -339,8 +339,8 @@ hr {
 }
 
 .menu-item:hover {
-    transform: scale(1.05);
-    transition: 0.1s ease-in;
+    /* transform: scale(1.05);
+    transition: 0.1s ease-in; */
     box-shadow: 0 0 30px 3px #3a0a05;
     background-color: #3a0a05;
     border: solid 2px #fffff0;
@@ -861,15 +861,16 @@ main #home-main {
 .black-bg {
     background: #0A0A0A;
     color:#FFFFFF;
-    font-family: var(--tertiary-font), sans-serif;
+    font-family: var(--secondary-font), sans-serif;
 } 
 
 #about-us-bg {
     background-image: url(website-media/Header/About\ Us\ Banner\ BG\ 1.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
     margin: 80px 30px 30px 30px;
-    padding: 100px;
+    padding: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -880,6 +881,7 @@ main #home-main {
     color: #FFFFF0;
     text-align: center;
     font-size: 12px;
+    opacity: 1;
 }
 
 #about-us-bg button {
@@ -891,10 +893,14 @@ main #home-main {
     font-size: 12px;
     border: none;
     border-radius: 3px;
+    font-family: var(--secondary-font), sans-serif;
+    font-weight: 600;
 }
 
 #about-us-bg button:hover {
-    background-color: #737373;
+    transition: 0.2s ease;
+    transform: scale(1.05);
+    background-color: #ffffff;
 }
 
 #japanese-about-text {
@@ -903,6 +909,8 @@ main #home-main {
     text-orientation: upright;
     align-self: center;
     letter-spacing: 15px;
+    opacity: 0.7;
+    color: #FFFFF0;
 }
 
 .why-we-started, .sushi-images, .logo-story {
@@ -934,7 +942,7 @@ main #home-main {
 .sushi-images {
     padding: 3px;
     flex-direction: row;
-    gap: 80px;
+    gap: 3em;
 }
 
 .sushi {
@@ -950,13 +958,21 @@ main #home-main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     font-family: var(--japanese-font), sans-serif;
-    justify-items: center;
-    font-size: 0.7em;
-    gap: 10px;
+    gap: 15px;
+}
+
+.kanto-elements hr {
+    margin: 0.5em;
 }
 
 .element-text {
+    margin: auto 0;
+}
+
+.element-text p {
     align-content: center;
+    margin: 0;
+    letter-spacing: 0.5px;
 }
 
 /* ===== SUPPORT STYLING ===== */
@@ -1741,7 +1757,6 @@ b {
         font-size: 3em;
     }
 
-
     .why-we-started, .sushi-images, .logo-story {
         padding: 30px 50px;
         gap: 20px;
@@ -1752,8 +1767,8 @@ b {
     }
 
     .why-we-started p {
-        margin: 50px 100px;
-        font-size: 1.3em;
+        margin: 0 8em 3em 8em;
+        font-size: 1em;
     }
 
     .logo-story img, .kanto-elements img {
@@ -1763,49 +1778,53 @@ b {
 
     .sushi-images {
         padding: 0;
-        column-gap: 80px;
+        column-gap: 0;
+        margin: 1em 3em;
     }
 
     .sushi p {
-        margin: 16px 40px;
-        font-size: 1.4em;
+        margin: 1em 2em;
+        font-size: 1.25em;
     }
 
     .kanto-elements {
-        margin: 50px;
-        padding: 10px;
-        grid-template-columns: repeat(3, auto);
-        font-size: 1.1em;
-        gap: 30px;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        gap: 1em;
+        max-width: 45em;
+        justify-content: center;
     }
 
     .kanto-elements img {
-        aspect-ratio: 3/4;
-        width: 100%;
+        width: auto;
         margin: auto;
     }
 
     .element-text {
-        align-self: start;
-        justify-items: center;
+        margin: 0;
+        text-align: center;
     }
 
-    .element-text hr {
-        width: 100%;
-        margin: auto;
+    .element-text p {
+        align-self: center;
+        justify-self: center;
+        font-size: 2em;
     }
 
     .element-text p:nth-child(1) {
-        margin: 15px 0;
-        font-size: 1.1em;
+        margin: 1em 0;
+        font-size: 1em;
     }
 
-    .element-text p:nth-child(2) {
-        margin: 0;
-        writing-mode: vertical-rl;
-        text-orientation: upright;
+    .jap-text-elements {
+        margin: 1em 0;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
         align-self: center;
         letter-spacing: 15px;
+        font-size: 10em;
     }
 
     #raw-steak {
@@ -2341,11 +2360,31 @@ b {
     }
 
     #about-us-bg button {
-        font-size: 18px;
+        font-size: 1.25em;
+        width: 10em;
     }
 
-    .why-we-started, .logo-story {
-        padding: 30px 250px;
+    #about-us-bg h4 {
+        font-size: 1.5em;
+    }
+
+    #japanese-about-text {
+        font-size: 4em;
+    }
+
+    .why-we-started {
+        padding: 30px 20em;
+    } 
+    
+    .logo-story {
+        padding: 30px 18em;
+    }
+
+    .sushi-images {
+        margin: 0 2em;
+    }
+    .sushi p {
+        margin: 0 2em;
     }
 
     /* ===== DIRECTIONS STYLING ===== */
