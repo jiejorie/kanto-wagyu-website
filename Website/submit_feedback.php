@@ -1,4 +1,4 @@
-
+<!-- NOTE: This cannot work without XAMPP server -->
 
 <?php
 // Database credentials
