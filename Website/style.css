@@ -77,8 +77,17 @@ body {
     z-index: 1000;
 }
 
-.black-nav .nav-bar {
+#navbar, #navbar2 {
+    transition: background-color 0.5s ease;
+    background: transparent;
+}
+
+#navbar.scrolled {
     background-color: black;
+}
+
+#navbar2.scrolled2 {
+    background-color: #FFFFF0;
 }
 
 /* The background color for when the navigation is opened */

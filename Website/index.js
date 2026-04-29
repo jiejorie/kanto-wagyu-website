@@ -8,6 +8,17 @@ toggle.addEventListener('click', () => {
     header.classList.toggle('nav-open');
 });
 
+// ===== NAV SCROLL =====
+window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+
+    if (window.scrollY > 50) { // When scrolled 50px
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
 // ===== MENU CATEGORIES FOOD FILTER =====
 
 function display_menu(menu_category) {
@@ -71,22 +82,4 @@ function toggleQuestion(btn) {
   question.classList.toggle('show-text');
 
   allQuestions.style.animation = "showAnswer 1s ease";
-}
-
-window.onscroll = function() {
-    scrollFunction();
-};
-
-function scrollFunction() {
-    // Select the navigation bar element correctly
-    const nav = document.querySelector(".nav-bar"); 
-    
-    if(!nav) {console.log("no nav")};
-
-    // Check scroll position from the top
-    if (window.scrollY > 0) {
-        nav.classList.add("black-nav");
-    } else {
-        nav.classList.remove("black-nav");
-    }
 }
