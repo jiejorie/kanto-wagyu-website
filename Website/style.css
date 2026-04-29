@@ -389,6 +389,7 @@ hr {
     grid-area: 3 /span 3;
     font-size: 12px;
     line-height: 1.5;
+    color:rgba(255, 255, 255, 0.5);
 }
 
 #business-lunch-2 {
