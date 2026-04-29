@@ -93,7 +93,7 @@ header.nav-open nav {
 }
 
 /* Kanto logo's size and spacing */
-.header-logo {
+.header-logo, #support-body .nav-bar img,  #directions-body .nav-bar{
     width: 70px;
     height: 20px;
     margin: 30px;
@@ -1134,6 +1134,14 @@ main #home-main {
 }
 
 /* ===== DIRECTIONS STYLING ===== */
+
+#directions-header {
+    background: transparent;
+}
+
+#directions-header ul li a {
+    color: #660810
+}
 
 .directions-sec {
     background-image: url("website-media/Directions/directions-page-bg-mobile.png");
