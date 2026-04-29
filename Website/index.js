@@ -37,23 +37,6 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-// Adding an event listener with the "wheel" event
-scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
-})
-
-// Event listener that listens for a click from the Next Button, sliding left between the images
-nextBtn.addEventListener("click", () => {
-    scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft += 460;
-})
-
-// Event listener that listens for a click from the Back Button, sliding right between the images
-backBtn.addEventListener("click", () => {
-    scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft -= 460;
-})
 
 function showSlides(n) {
     let i;
@@ -88,4 +71,22 @@ function toggleQuestion(btn) {
   question.classList.toggle('show-text');
 
   allQuestions.style.animation = "showAnswer 1s ease";
+}
+
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    // Select the navigation bar element correctly
+    const nav = document.querySelector(".nav-bar"); 
+    
+    if(!nav) {console.log("no nav")};
+
+    // Check scroll position from the top
+    if (window.scrollY > 0) {
+        nav.classList.add("black-nav");
+    } else {
+        nav.classList.remove("black-nav");
+    }
 }
