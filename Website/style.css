@@ -339,8 +339,8 @@ hr {
 }
 
 .menu-item:hover {
-    /* transform: scale(1.05);
-    transition: 0.1s ease-in; */
+    transform: scale(1.05);
+    transition: 0.1s ease-in;
     box-shadow: 0 0 30px 3px #3a0a05;
     background-color: #3a0a05;
     border: solid 2px #fffff0;
@@ -1263,7 +1263,7 @@ main #home-main {
 
 /* ===== FOOTER STYLING ===== */
 footer {
-    background-color: #101010;
+    background-color: #000000;
     font-family: var(--main-font), sans-serif;
     color: white;
     padding: 0 1.5em;
@@ -1282,10 +1282,7 @@ footer {
     width: 1.7rem;
     border-radius: 50px;
     margin: 0 1px;
-}
-
-.footer-social-media img {
-    filter: grayscale(100%) brightness(110%);
+    filter: grayscale(100%) brightness(110%) contrast(130%);
 }
 
 footer h5, footer h6 {
