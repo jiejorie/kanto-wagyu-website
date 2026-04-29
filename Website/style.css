@@ -415,6 +415,7 @@ hr {
 #drinks .menu-item .drink-price {
     font-size: 12px;
     line-height: 1.5;
+    color:rgba(255, 255, 255, 0.5);
 }
 
 #business-lunch-2 {
