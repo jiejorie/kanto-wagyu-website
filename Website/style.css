@@ -278,6 +278,7 @@ header.nav-open nav {
     box-shadow: 0 0 8px 2px #801622;
     transform: scale(1.03);
     transition: 0.2s ease;
+    cursor: pointer;
 }
 
 hr {
@@ -922,6 +923,12 @@ main #home-main {
 /* ===== SUPPORT STYLING ===== */
 #support-bg {
     background: none;
+}
+
+#support-bg .header-logo {
+    width: 70px;
+    height: 20px;
+    margin: 30px;
 }
 
 #support-bg ul li a {
