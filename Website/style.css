@@ -93,7 +93,7 @@ header.nav-open nav {
 }
 
 /* Kanto logo's size and spacing */
-.header-logo, #support-body .nav-bar img,  #directions-body .nav-bar{
+.header-logo {
     width: 70px;
     height: 20px;
     margin: 30px;
