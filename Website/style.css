@@ -71,20 +71,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     top: 0;
     position: fixed;
     z-index: 1000;
     transition: background-color 0.5s ease;
     background: transparent;
-}
-
-#home-pattern-bg .nav-bar.scrolled, #menu-bg .nav-bar.scrolled, .black-bg .nav-bar.scrolled {
-    background-color: black;
-}
-
-#support-body .nav-bar.scrolled, #directions-body .nav-bar.scrolled {
-    background-color: #FFFFF0;
 }
 
 /* The background color for when the navigation is opened */
@@ -96,7 +88,7 @@ header.nav-open nav {
 .header-logo {
     width: 70px;
     height: 20px;
-    margin: 30px;
+    margin: 20px 30px;
 }
 
 /* Navigation button's styling and spacing */
@@ -142,6 +134,10 @@ header.nav-open nav {
     border-top: 1px solid #e2e2e2;
 }
 
+#support-body .nav-links.open, #directions-body .nav-links.open {
+    border-top: 1px solid #660810;
+}
+
 /* The navigation list's styling as a whole */
 .nav-links ul {
     list-style: none;
@@ -162,6 +158,15 @@ header.nav-open nav {
 /* When the mouse cursor hovers a navigation link */
 .nav-links ul li a:hover {
     background-color: #660810;
+}
+
+#home-pattern-bg .nav-bar.scrolled, #menu-bg .nav-bar.scrolled, .black-bg .nav-bar.scrolled {
+    background-color: black;
+}
+
+#support-body .nav-bar.scrolled, #directions-body .nav-bar.scrolled, #support-body .nav-links.open, #directions-body .nav-links.open, #support-body .nav-links, #directions-body .nav-links, #support-body header.nav-open nav, #directions-body header.nav-open nav{
+    background-color: #FFFFF0;
+    background: #FFFFF0;
 }
 
 .overlay-cont {
@@ -942,7 +947,7 @@ main #home-main {
 
 #questions {
     background-image: url(website-media/Support/Support\ BG\ Mobile.png);
-    background-position: center;
+    background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #660810;
