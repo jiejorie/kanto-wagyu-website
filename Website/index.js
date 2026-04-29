@@ -10,7 +10,7 @@ toggle.addEventListener('click', () => {
 
 // ===== NAV SCROLL =====
 window.addEventListener('scroll', () => {
-    const navbar = document.getElementById('navbar');
+    const navbar = document.querySelector('.nav-bar');
 
     if (window.scrollY > 50) { // When scrolled 50px
         navbar.classList.add('scrolled');

@@ -75,18 +75,15 @@ body {
     top: 0;
     position: fixed;
     z-index: 1000;
-}
-
-#navbar, #navbar2 {
     transition: background-color 0.5s ease;
     background: transparent;
 }
 
-#navbar.scrolled {
+#home-pattern-bg .nav-bar.scrolled, #menu-bg .nav-bar.scrolled, .black-bg .nav-bar.scrolled {
     background-color: black;
 }
 
-#navbar2.scrolled2 {
+#support-body .nav-bar.scrolled, #directions-body .nav-bar.scrolled {
     background-color: #FFFFF0;
 }
 
