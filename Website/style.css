@@ -112,7 +112,7 @@ header.nav-open nav {
 }
 
 /* The navigation links' styling when it's opened */
-.nav-links {
+.nav-links{
     position: absolute;
     top: 5em;
     left: 0;
@@ -121,7 +121,7 @@ header.nav-open nav {
     opacity: 0;
     transform: translateY(-10px);
     overflow: hidden;
-    background: #0A0A0A;
+    background: #000000d2;
     transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
     font-family: var(--main-font-bold), sans-serif;
 }
@@ -137,6 +137,7 @@ header.nav-open nav {
 #support-body .nav-links.open, #directions-body .nav-links.open {
     border-top: 1px solid #660810;
 }
+
 
 /* The navigation list's styling as a whole */
 .nav-links ul {
@@ -161,13 +162,17 @@ header.nav-open nav {
 }
 
 #home-pattern-bg .nav-bar.scrolled, #menu-bg .nav-bar.scrolled, .black-bg .nav-bar.scrolled {
-    background-color: black;
+    background-color: #000000d2;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 15px #fffff010;
 }
 
-#support-body .nav-bar.scrolled, #directions-body .nav-bar.scrolled, #support-body .nav-links.open, #directions-body .nav-links.open, #support-body .nav-links, #directions-body .nav-links, #support-body header.nav-open nav, #directions-body header.nav-open nav{
-    background-color: #FFFFF0;
-    background: #FFFFF0;
+#support-body .nav-bar.scrolled, #directions-body .nav-bar.scrolled, #support-body .nav-links.open, #directions-body .nav-links.open, #support-body header.nav-open nav, #directions-body header.nav-open nav {
+    background-color: #fffff0d1;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 15px #3a0a0513;
 }
+
 
 .overlay-cont {
     display: flex;
@@ -837,6 +842,7 @@ main #home-main {
     box-shadow: 0px 0px 10px #B93B41;
     font-weight: 500;
     outline: solid 0.5px white;
+    transition: 0.2s ease;
 }
 
 #book form button {
@@ -958,12 +964,6 @@ main #home-main {
     background: none;
 }
 
-#support-bg .header-logo {
-    width: 70px;
-    height: 20px;
-    margin: 30px;
-}
-
 #support-bg ul li a {
     color: #660810
 }
@@ -993,7 +993,7 @@ main #home-main {
 }
 
 .faq-list {
-    margin: 100px auto;
+    margin: 0 auto;
     max-width: 70vw;    
 }
 
@@ -1188,6 +1188,7 @@ main #home-main {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     font-family: var(--main-font-bold), sans-serif;
     text-align: center;
     padding: 0.5em 0;
