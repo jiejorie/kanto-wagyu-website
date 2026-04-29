@@ -73,15 +73,19 @@ function showSlides(n) {
 
 // ===== SUPPORT FAQs =====
 function toggleQuestion(btn) {
-    // Calling the class used for the questions
-    const question = btn.closest(".faq");
-    const allQuestions = document.querySelectorAll(".faq");
+  //Find the parent FAQ container
+  const question = btn.closest('.faq');
+  const allQuestions = document.querySelectorAll('.faq');
 
-    // Hides the answers that are currently displayed
-    allQuestions.forEach(function(item) {
-        item.classList.remove("show-text");
-    });
+  // Hide all other questions
+  allQuestions.forEach(function(item) {
+    if (item !== question) {
+      item.classList.remove('show-text');
+    }
+  });
 
-    // Displays the answer of the question being clicked
-    question.classList.add("show-text");
+  // Toggle the clicked question
+  question.classList.toggle('show-text');
+
+  allQuestions.style.animation = "showAnswer 1s ease";
 }

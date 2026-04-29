@@ -221,31 +221,41 @@ header.nav-open nav {
 
 /* ===== MAIN STYLING (MENU PAGE) ===== */
 
+#menu-bg {
+    background-image: url(website-media/Menu/reviews-menu-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .title {
-    margin: 20px;
+    margin: 20px 0 0 0;
     color: #FFFFFF;
     text-align: center;
     line-height: 1.0;
     font-family: var(--main-font), sans-serif;
+    background: black;
 }
 
 .title h1 {
-    margin: 3em 0 0 0;
+    padding: 3em 0 0 0;
     font-size: 25px;
 }
 
 .title h2 {
-    margin: 5px;
+    margin: 5px 0 0 0;
     font-weight: 100;
     font-size: 18px;
 }
 
 .btn-container {
-    margin: 20px;
+    padding: 20px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    background: black;
 }
 
 .btn-container button {
@@ -255,12 +265,14 @@ header.nav-open nav {
     font-size: 10px;
     border: none;
     border-radius: 10px;
-    font-family: var(--main-font), sans-serif;
+    font-family: var(--secondary-font), sans-serif;
 }
 
 .btn-container button:hover, .beige-bg button:hover {
     background-color: #350000;
     box-shadow: 0 0 8px 2px #801622;
+    transform: scale(1.03);
+    transition: 0.2s ease;
 }
 
 hr {
@@ -268,10 +280,7 @@ hr {
 }
 
 .menu-display-section {
-    background-image: url(website-media/Menu/reviews-menu-bg.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    background: linear-gradient(#000000ac 1%, transparent);
     padding: 20px;
     font-family: var(--main-font), sans-serif;
     color:#FFFFFF;
@@ -313,9 +322,13 @@ hr {
     line-height: 1.5;
 }
 
+
 .menu-item:hover {
     transform: scale(1.05);
+    transition: 0.1s ease-in;
     box-shadow: 0 0 30px 3px #3a0a05;
+    background-color: #3a0a05;
+    border: solid 2px #fffff0;
 }
 
 .menu-item img {
@@ -425,6 +438,7 @@ main #home-main {
     color: white;
     text-align: center;
     font-family: var(--main-font-bold), sans-serif;
+    padding-bottom: 3em;
 }
 
 #promotions h1 {
@@ -574,11 +588,13 @@ main #home-main {
 }
 
 .testimonials-section {
-    background-image: url(website-media/Home/reviews/reviews-bg-mobile.png);
+    background-image: linear-gradient(#0a0a0a, transparent),url(website-media/Home/reviews/reviews-bg-mobile.png);
     background-position: top;
     background-size: cover;
     height: 49em;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 0 10em 5em -5em#0a0a0a85;
 }
 
 .testimonials-cont {
@@ -742,6 +758,8 @@ main #home-main {
     font-family: var(--main-font-bold), sans-serif;
     color: #FFFFF0;
     text-align: center;
+    background-attachment: fixed;
+    
 }
 
 #book h1 {
@@ -911,7 +929,7 @@ main #home-main {
 
 #questions {
     background-image: url(website-media/Support/Support\ BG\ Mobile.png);
-    background-position: top;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #660810;
@@ -919,6 +937,7 @@ main #home-main {
     padding: 100px 20px;
     display: grid;
     place-items: center;
+    background-attachment: fixed;
 }
 
 #questions h1 {
@@ -928,7 +947,8 @@ main #home-main {
 }
 
 .faq-list {
-    margin: 100px 20px 0;
+    margin: 100px auto;
+    max-width: 70vw;    
 }
 
 .faq {
@@ -940,6 +960,7 @@ main #home-main {
     padding: 10px;
     margin-bottom: 20px;
 }
+
 
 .question {
     display: flex;
@@ -974,11 +995,13 @@ main #home-main {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     line-height: 1.5;
 }
+
 .answer p {
     margin-bottom: 0;
     font-family: var(--main-font-medium);
     font-weight: 100;
     font-size: 0.8em;
+    animation: showAnswer 0.5s ease;
 }
 
 /* hide text */
@@ -988,6 +1011,17 @@ main #home-main {
 
 .show-text .answer {
     display: block;
+}
+
+@keyframes showAnswer {
+    0% {
+        opacity: 0.5;
+        transform: translateY(-5px);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .minus-icon {
@@ -1792,6 +1826,8 @@ b {
     
     #questions {
         background-image: url(website-media/Support/Support\ FAQ\ BG\ 1.png);
+        max-height: 52em;
+        padding-bottom: 10em;
     }
 
     #questions h1 {
@@ -2268,6 +2304,12 @@ b {
 
     /* ===== SUPPORT STYLING ===== */
     
+    #questions {
+        background-image: url(website-media/Support/Support\ FAQ\ BG\ 1.png);
+        max-height: 75em;
+        padding-bottom: 10em;
+    } 
+
     #questions h1 {
         text-align: center;
         font-size: 4em;
