@@ -246,6 +246,10 @@ header.nav-open nav {
     background-attachment: fixed;
 }
 
+#menu-bg .nav-bar {
+    background: #000000;
+}
+
 .title {
     margin: 20px 0 0 0;
     color: #FFFFFF;
