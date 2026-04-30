@@ -46,15 +46,23 @@
             <button id="book-header-button" onclick="window.location.href = 'home.html#book';">BOOK NOW</button>
         </div>
     </header>
+
+    <!-- Overlapping Japanese text -->
     <p lang="ja" class="japanese-promotions-text" id="jap-promotion-text-1">人気メニュー</p>
+
     <!-- Main Section -->
     <main id="home-main">
+        <!-- Promotions section -->
         <section id="promotions">
-            <h1>PROMOTIONS</h1>                
+            <h1>PROMOTIONS</h1>
+            <!-- Offer Carousel -->
             <div class="slideshow-container">
                 <p lang="ja" class="japanese-promotions-text" id="jap-promotion-text-2">人気メニュー</p>
+
+                <!-- First Promotion Offer -->
                 <div class="promotion-offer">
-                    <div class="offers-text">                        
+                    <!-- Promotion overlay text -->
+                    <div class="offers-text">
                         <h2>UNLIMITED WAGYU</h2>
                         <div class="offer-details">
                             <p>UNLI WAGYU</p>
@@ -62,17 +70,22 @@
                             <p>1 RAMEN</p>
                         </div>
                     </div>
+                    <!-- Responsive image showcase -->
                     <picture onclick="window.location.href = 'menu.html#promos';">
                         <source media="(min-width: 1280px)"
                             srcset="website-media\Home\offers-carousel\unli-wagyu\unli-wagyu-desktop.png">
                         <source media="(min-width: 800px)"
                             srcset="website-media\Home\offers-carousel\unli-wagyu\unli-wagyu-tablet.png">
+                        <!-- Fallback Image -->
                         <img src="website-media/Home/offers-carousel/unli-wagyu/unli-wagyu-mobile.png" alt="unli wagyu"
                             width="100%">
                     </picture>
                 </div>
+                <!-- End of First Promotion Offer -->
 
+                <!-- Second Promotion Offer -->
                 <div class="promotion-offer">
+                    <!-- Promotion overlay text -->
                     <div class="offers-text">
                         <h2>UNLIMITED WAGYU</h2>
                         <div class="offer-details">
@@ -81,17 +94,22 @@
                             <p>1 RAMEN</p>
                         </div>
                     </div>
+                    <!-- Responsive image showcase -->
                     <picture onclick="window.location.href = 'menu.html#promos';">
                         <source media="(min-width: 1280px)"
                             srcset="website-media\Home\offers-carousel\unli-wagyu\unli-wagyu-desktop.png">
                         <source media="(min-width: 800px)"
                             srcset="website-media\Home\offers-carousel\unli-wagyu\unli-wagyu-tablet.png">
+                        <!-- Fallback Image -->
                         <img src="website-media/Home/offers-carousel/unli-wagyu/unli-wagyu-mobile.png" alt=""
                             width="100%">
                     </picture>
                 </div>
+                <!-- End of Second Promotion Offer -->
 
+                <!-- Third Promotion Offer -->
                 <div class="promotion-offer">
+                    <!-- Promotion overlay text -->
                     <div class="offers-text">
                         <h2>UNLIMITED WAGYU</h2>
                         <div class="offer-details">
@@ -100,34 +118,46 @@
                             <p>1 RAMEN</p>
                         </div>
                     </div>
+                    <!-- Responsive image showcase -->
                     <picture onclick="window.location.href = 'menu.html#promos';">
                         <source media="(min-width: 1280px)"
                             srcset="website-media\Home\offers-carousel\unli-wagyu\unli-wagyu-desktop.png">
                         <source media="(min-width: 800px)"
                             srcset="website-media\Home\offers-carousel\unli-wagyu\unli-wagyu-tablet.png">
+                        <!-- Fallback Image -->
                         <img src="website-media/Home/offers-carousel/unli-wagyu/unli-wagyu-mobile.png" alt=""
                             width="100%">
                     </picture>
                 </div>
+                <!-- End of Third Promotion Offer -->
 
+                <!-- Arrow Controls for Offer Carousel -->
                 <a class="prev" onclick="plusSlides(-1)"><img src="website-media/Home/offers-carousel/left-arrow.png"
                         alt="left arrow"></a>
                 <a class="next" onclick="plusSlides(1)"><img src="website-media/Home/offers-carousel/right-arrow.png"
                         alt="right arrow"></a>
 
-            </div>
+            </div> <!-- End of Offer Carousel -->
+
+            <!-- Visual indicator for Offer Carousel -->
             <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
 
+            <!-- View General Menu Button -->
             <button id="view-menu-btn" type="menu" onclick="window.location.href = 'menu.html';">VIEW MENU</button>
         </section>
+        <!-- End of Promotions Section -->
 
+        <!-- Reviews Section -->
         <section id="reviews">
+
+            <!-- Testimonials Section -->
             <div class="testimonials-section">
                 <h1>REVIEWS</h1>
+                <!-- Ratings -->
                 <div class="review-header-details">
                     <div id="star-rating">
                         <p>4.7</p>
@@ -135,7 +165,11 @@
                     </div>
                     <p>1.2K REVIEWS</p>
                 </div>
+
+                <!-- Testimonials -->
                 <div class="testimonials-cont">
+
+                    <!-- First Testimonial -->
                     <div class="testimonial">
                         <div class="testimonial-content">
                             <img src="website-media/Home/reviews/Quote.png" alt="quotes">
@@ -145,6 +179,9 @@
                             <p class="testimonial-writer">Rose Jean Elamil</p>
                         </div>
                     </div>
+                    <!-- End of First Testimonial -->
+
+                    <!-- Second Testimonial -->
                     <div class="testimonial">
                         <div class="testimonial-content">
                             <img src="website-media/Home/reviews/Quote.png" alt="quotes">
@@ -154,6 +191,9 @@
                             <p class="testimonial-writer">Ma. Arwina Gabriel</p>
                         </div>
                     </div>
+                    <!-- End of Second Testimonial -->
+
+                    <!-- Third Testimonial -->
                     <div class="testimonial" id="third-testimonial">
                         <div class="testimonial-content">
                             <img src="website-media/Home/reviews/Quote.png" alt="quotes">
@@ -162,100 +202,140 @@
                             <p class="testimonial-writer">RM</p>
                         </div>
                     </div>
+                    <!-- End of Third Testimonial -->
                 </div>
             </div>
+            <!-- End of Testimonials -->
+
+            <!-- Share your experience section -->
             <div class="share-experience-section">
                 <h2>SHARE YOUR EXPERIENCE</h2>
                 <h3>WE WOULD LIKE TO HEAR YOUR FEEDBACK!</h3>
+                <!-- Google Reviews Button -->
                 <button type="button"
                     onclick="window.location.href = 'https://www.google.com/search?q=google+reviews+kanto+wagyu&sca_esv=33d040cb389eca3f&biw=1536&bih=738&sxsrf=ANbL-n4kOKtAxNxRjHkMAG6D3qXJvG21lA%3A1777046009325&ei=-ZHraZHhEt3o7_UPidOHuAI&oq=google+reviews+&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2dvb2dsZSByZXZpZXdzICoCCAAyBBAjGCcyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyBRAAGIAEMgoQABiABBiKBRhDMgoQABiABBiKBRhDMgoQABiABBiKBRhDMgUQABiABEjICVCpA1ipA3ABeAGQAQCYAa8BoAGvAaoBAzAuMbgBAcgBAPgBAZgCAqACuwHCAgcQIxiwAxgnwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICGRAuGIAEGIoFGEMYxwEY0QMYyAMYsAPYAQGYAwCIBgGQBhO6BgYIARABGAmSBwMxLjGgB6gGsgcDMC4xuAezAcIHAzItMsgHCYAIAQ&sclient=gws-wiz-serp#lrd=0x3e5e67fa5ac65985:0x7c468b4ffab50834,3,,,,'">
                     RATE US HERE
                 </button>
             </div>
-        </section>
+            <!-- End of Share experience section -->
 
+        </section>
+        <!-- End of Reviews Section -->
+
+
+        <!-- Delivery Section -->
         <section id="delivery">
             <hr>
             <hr>
 
             <h1>DELIVERY</h1>
             <h2>EXPERIENCE KANTO IN THE COMFORT OF YOUR HOME</h2>
+
+            <!-- Clickable Deliveries Supported by Kanto Wagyu -->
             <div class="supported-deliveries">
+
+                <!-- Left Column for Delivery Brands -->
                 <div class="left-delivery-brand">
+                    <!-- Careem -->
                     <a href="https://www.careem.com/en-AE/food?srsltid=AfmBOopY6dyT9Fq6PMv54_ls0Q9TacLWR9AQfyQo1hq0aner9zUSiROL"
                         target="_blank" class="delivery-brand">
                         <img src="website-media/Home/delivery/careem.png" alt="careem">
                     </a>
+                    <!-- Deliveroo -->
                     <a href="https://deliveroo.ae/menu/abu-dhabi/al-danah/kanto-wagyu-restaurant-and-cafe"
                         target="_blank" class="delivery-brand" id="deliveroo-delivery">
                         <img src="website-media/Home/delivery/deliveroo.png" alt="deliveroo">
                     </a>
                 </div>
+                <!-- End of Left Column -->
 
+
+                <!-- Japanese Delivery Text for Display Purposes -->
                 <div id="japanese-delivery-text">
                     <h3 lang="ja">お店の味を、</h3>
                     <h3 lang="ja">ご自宅で。</h3>
                 </div>
 
+                <!-- Right Column for Delivery Brands -->
                 <div class="right-delivery-brand">
+                    <!-- Talabat -->
                     <a href="https://www.talabat.com/uae/restaurant/735410/kanto-wagyu-restaurant-and-caf-tourist-club-area-al-zahiya?aid=6485"
                         target="_blank" class="delivery-brand">
                         <img src="website-media/Home/delivery/talabat.png" alt="talabat">
                     </a>
+                    <!-- Noon -->
                     <a href="https://food.noon.com/uae-en/outlet/KNTWGYZZ1J-Kant%C5%8D%20Wagyu/" target="_blank"
                         class="delivery-brand" id="noon-delivery"><img src="website-media/Home/delivery/noon.png"
                             alt="noon">
                     </a>
+                    <!-- Zomato -->
                     <a href="https://www.zomato.com/abudhabi/kanto-najda" target="_blank" class="delivery-brand"><img
                             src="website-media/Home/delivery/zomato.png" alt="zomato">
                     </a>
                 </div>
+                <!-- End of Right Column -->
             </div>
         </section>
+        <!-- End of Deliveries Section -->
 
+        <!-- Book Now Section -->
         <section id="book">
+
             <h1>RESERVATION</h1>
             <h2>DINE WITH US — RESERVE WITH US NOW</h2>
+
+            <!-- Reservation Form using Web3Forms API -->
             <form id="form" action="https://api.web3forms.com/submit" method="POST">
 
+                <!-- Hidden inputs that customize e-mail creation -->
                 <input type="hidden" name="access_key" value="0e348fdd-46d6-4855-92d9-6eb8d5ed67f2">
                 <input type="hidden" name="subject" value="Table Reservation Inquiry">
                 <input type="hidden" name="from_name" value="Customer">
 
-                <div class="book-first-name">
-                    <label for="First Name">Full Name*</label>
-                    <input type="text" name="name" id="bname" placeholder="Your Full Name" required>
+                <!-- Full Name -->
+                <div class="book-full-name">
+                    <label for="Full Name">Full Name*</label>
+                    <input type="text" name="name" placeholder="Your Full Name" required>
                 </div>
 
+                <!-- Phone Number -->
                 <div class="book-phone-number">
                     <label for="Phone Number">Phone Number*</label>
-                    <input type="number" name="mobile" id="bphonenumber" placeholder="Your Phone No." required>
+                    <input type="number" name="mobile" placeholder="Your Phone No." required>
                 </div>
 
+                <!-- Email -->
                 <div class="book-email">
                     <label for="Email">Email*</label>
-                    <input type="text" name="email" id="bemail" placeholder="Your Email" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
                 </div>
 
+                <!-- Date -->
                 <div class="book-date">
                     <label for="Date">Date*</label>
-                    <input type="date" name="date" id="bdate" required>
+                    <input type="date" name="date" required>
                 </div>
 
+                <!-- Time -->
                 <div class="book-time">
                     <label for="Time">Time*</label>
-                    <input type="time" name="time" id="btime" required>
+                    <input type="time" name="time" required>
                 </div>
 
+                <!-- Guest Amount -->
                 <div class="book-guests">
                     <label for="Guest Size">Guest Size*</label>
-                    <input type="number" name="guest" id="bguest" placeholder="Enter Amount" required>
+                    <input type="number" name="guest" placeholder="Enter Amount" required>
                 </div>
 
+                <!-- Submit Button -->
                 <button type="submit" value="send">SUBMIT</button>
             </form>
+            <!-- End of Reservation Form -->
         </section>
+        <!-- End of Book Now Section -->
     </main>
+    <!-- End of Main Section -->
 
     <!-- Footer Section -->
     <footer>
