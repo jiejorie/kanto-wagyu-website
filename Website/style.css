@@ -219,6 +219,7 @@ header.nav-open nav {
 #menu-header-button:hover {
     background-color: hsl(0, 0%, 20%);
     box-shadow: none;
+    cursor: pointer;
 }
 
 #book-header-button {
@@ -229,6 +230,7 @@ header.nav-open nav {
 
 #book-header-button:hover {
     background-color: hsl(0, 0%, 80%);
+    cursor: pointer;
 }
 
 
@@ -590,6 +592,7 @@ main #home-main {
     font-size: 1.25em;
     background-color: #FFFFF0;
     border: none;
+    cursor: pointer;
 }
 
 /* ===== MAIN STYLING (HOME PAGE: REVIEWS)===== */
@@ -901,6 +904,7 @@ main #home-main {
     transition: 0.2s ease;
     transform: scale(1.05);
     background-color: #ffffff;
+    cursor: pointer;
 }
 
 #japanese-about-text {
@@ -1183,6 +1187,7 @@ main #home-main {
 
 #feedback form button:hover {
     background-color: #180507;
+    cursor: pointer;
 }
 
 #support-footer {
@@ -1366,6 +1371,7 @@ b {
     .nav-links ul li a:hover {
         background-color: transparent;
         color: #c4c4c4;
+        cursor: pointer;
     }
 
     .nav-button {
