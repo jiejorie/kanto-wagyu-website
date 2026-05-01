@@ -164,7 +164,8 @@ header.nav-open nav {
 #home-pattern-bg .nav-bar.scrolled, #menu-bg .nav-bar.scrolled, .black-bg .nav-bar.scrolled {
     background-color: #000000d2;
     backdrop-filter: blur(10px);
-    box-shadow: 0px 10px 15px #fffff010;
+    border-bottom: 1.5px solid  #fffff021;
+    transition: 0.2s ease;
 }
 
 #support-body .nav-bar.scrolled, #directions-body .nav-bar.scrolled, #support-body .nav-links.open, #directions-body .nav-links.open, #support-body header.nav-open nav, #directions-body header.nav-open nav {
@@ -505,6 +506,8 @@ main #home-main {
 .promotion-offer picture img, .promotion-offer picture source {
     animation: offersAnim 1s ease;
     max-width: 30em;
+    width: auto;
+    max-height: 60vh;
 }
 
 /* Slideshow container */
@@ -549,17 +552,20 @@ main #home-main {
 
 .offer-details {
     display: flex;
-    gap: 2.5em;
+    gap: 1.5em;
+    margin: 0 2em;
     justify-content: center;
+    opacity: 0;
     animation: carouselAnim 0.5s ease forwards;
-    animation-delay: 1s;
+    animation-delay: 1.2s;
 }
 
 .offers-text h2 {
-    font-size: 3em;
+    font-size: 2.3em;
     margin: 0 0.3em 0.5em 0.3em;
+    opacity: 0;
     animation: carouselAnim 0.5s ease forwards;
-    animation-delay: 0.8s;
+    animation-delay: 1s;
 }
 
 /* The dots/bullets/indicators */
@@ -579,7 +585,7 @@ main #home-main {
 }
 
 @keyframes carouselAnim {
-    0% {opacity: 0; transform: translateX(-100px)} 
+    0% {opacity: 0; transform: translateX(-100px); display: none;} 
     100% {opacity: 1; transform: translateX(0px)}
 }
 
@@ -1512,13 +1518,18 @@ b {
 
     /* ===== MAIN STYLING (HOME PAGE: PROMOTIONS)===== */
 
+    #promotions {
+        padding-bottom: 15em;
+    }
+
     .japanese-promotions-text {
         font-size: 4em;
         opacity: 0.5;
     }
 
     .promotion-offer picture img, .promotion-offer picture source {
-        max-width: 85%;
+        max-width: 90vw;
+
     }
 
     .offer-details {
@@ -1538,7 +1549,7 @@ b {
     .prev, .next {
         cursor: pointer;
         position: absolute;
-        top: 50%;
+        top: 118%;
         margin-top: 0px;
     }
 
@@ -1547,11 +1558,11 @@ b {
     }
 
     .next {
-        right: 0;
+        right: 43%;
     }
 
     .prev {
-        left: 0;
+        left: 43%;
     }
 
     #view-menu-btn {
@@ -2187,6 +2198,7 @@ b {
         align-items: start;
         gap: 0.5em;
         padding-top: 1em;
+        margin: 0;
     }
 
     .offer-details p {
@@ -2223,7 +2235,7 @@ b {
     }
 
     .prev, .next {
-        top: 113%;
+        top: 40%;
     }
 
     .prev:active, .next:active {
@@ -2237,11 +2249,11 @@ b {
     }
 
     .next {
-        right: 46%;
+        right: 0;
     }
 
     .prev {
-        left: 46%;
+        left: 10%;
     }
 
     /* ===== MAIN STYLING (HOME PAGE: REVIEWS)===== */
