@@ -1529,7 +1529,6 @@ b {
 
     .promotion-offer picture img, .promotion-offer picture source {
         max-width: 90vw;
-
     }
 
     .offer-details {
@@ -2170,6 +2169,7 @@ b {
 
     .promotion-offer picture img, .promotion-offer picture source {
         max-width: 100%;
+        max-height: unset;
     }
 
     .slideshow-container {
