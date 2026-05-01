@@ -33,6 +33,7 @@
 
 
 /* ===== ROOT VARIABLES ===== */
+
 :root {
     --main-font: 'Asap Condensed';
     --main-font-medium: 'Asap Condensed Medium';
@@ -41,6 +42,11 @@
     --tertiary-font: 'Roboto';
     --japanese-font: 'Noto Serif JP';
 }
+
+
+
+/* =============== MOBILE FIRST APPROACH =============== */
+
 
 body {
     margin: 0;
@@ -51,22 +57,12 @@ body {
     flex-direction: column;
 }
 
-/* ===== HEADER SECTION STYLING ===== */
 
-/* Header Backgrounds Styling */
-.bg-img {
-    background-image: url("website-media/Header/home-bg.png");
-    width: 100%;
-    height: 50em;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
+
+/* =============== KANTO MOBILE NAVIGATION =============== */
+
 
 /* The spacing between the header logo and navigation button */
-
-
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -134,10 +130,10 @@ header.nav-open nav {
     border-top: 1px solid #e2e2e2;
 }
 
+/* Adds a top red border above the nav links */
 #support-body .nav-links.open, #directions-body .nav-links.open {
     border-top: 1px solid #660810;
 }
-
 
 /* The navigation list's styling as a whole */
 .nav-links ul {
@@ -174,6 +170,23 @@ header.nav-open nav {
     box-shadow: 0px 10px 15px #3a0a0513;
 }
 
+
+
+/* =============== KANTO HOME PAGE =============== */
+
+
+/* ===== HEADER STYLING (HOME PAGE) ===== */
+
+/* Header Backgrounds Styling */
+.bg-img {
+    background-image: url("website-media/Header/home-bg.png");
+    width: 100%;
+    height: 50em;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
 .overlay-cont {
     display: flex;
@@ -235,233 +248,8 @@ header.nav-open nav {
 }
 
 
-/* =============== MOBILE FIRST APPROACH =============== */
 
-/* ===== MAIN STYLING (MENU PAGE) ===== */
-
-#menu-bg {
-    background-image: url(website-media/Menu/reviews-menu-bg.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#menu-bg .nav-bar {
-    background: #000000;
-}
-
-.title {
-    margin: 20px 0 0 0;
-    color: #FFFFFF;
-    text-align: center;
-    line-height: 1.0;
-    font-family: var(--main-font), sans-serif;
-    background: black;
-}
-
-.title h1 {
-    padding: 3em 0 0 0;
-    font-size: 25px;
-}
-
-.title h2 {
-    margin: 5px 0 0 0;
-    font-weight: 100;
-    font-size: 18px;
-}
-
-.btn-container {
-    padding: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    background: black;
-}
-
-.btn-container button {
-    padding: 5px 15px;
-    background-color: #660810;
-    color:#FFFFFF;
-    font-size: 10px;
-    border: none;
-    border-radius: 10px;
-    font-family: var(--secondary-font), sans-serif;
-}
-
-.btn-container button:hover, .beige-bg button:hover {
-    background-color: #350000;
-    box-shadow: 0 0 8px 2px #801622;
-    transform: scale(1.03);
-    transition: 0.2s ease;
-    cursor: pointer;
-}
-
-hr {
-    margin: 0;
-}
-
-.menu-display-section {
-    background: linear-gradient(#000000ac 1%, transparent);
-    padding: 20px;
-    font-family: var(--main-font), sans-serif;
-    color:#FFFFFF;
-}
-
-.menu-group, .sub-menu-group {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-    margin-top: 5px;
-    gap: 10px;
-}
-
-.sub-menu-group, .sub-menu-group h2, h3 {
-    grid-area: auto/span 2;
-}
-
-.sub-menu-group h3 {
-    margin: 0;
-    font-size: 15px;
-    align-self:first baseline;
-}
-
-#business-lunch {
-    margin-bottom: 0;
-}
-
-.menu-item {
-    background-color: #000000;
-    border-radius: 10px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto 1fr;
-    grid-auto-flow: dense;
-    grid-row-gap: 10px; 
-    column-gap: 10px;
-    border: solid 1px #B93B41;
-    line-height: 1.5;
-}
-
-.menu-item:hover {
-    transform: scale(1.05);
-    transition: 0.1s ease-in;
-    box-shadow: 0 0 30px 3px #3a0a05;
-    background-color: #3a0a05;
-    border: solid 2px #fffff0;
-}
-
-.menu-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    grid-area: 1/span 3;
-    aspect-ratio: 3 / 2;
-    object-fit: cover;
-}
-
-.menu-item p {
-    margin: 0;
-    font-size: 0.7rem;
-}
-
-.menu-item b {
-    text-transform: uppercase;
-}
-
-.menu-item i {
-    color:hsl(0, 0%, 67%)
-}
-
-.menu-item p:nth-child(2) {
-    grid-area: 2 /span 2;
-    align-self:first baseline;
-}
-
-.menu-item p:nth-child(3) {
-    text-align: right;
-}
-
-.menu-item p:nth-child(4) {
-    grid-area: 3 /span 3;
-    justify-self: top;
-    font-size: 12px;
-    line-height: 1.5;
-    color:rgba(255, 255, 255, 0.5)
-}
-
-.menu-item p:nth-child(5) {
-    grid-area: 4 /span 3;
-    justify-self: top;
-    color:rgba(255, 255, 255, 0.5)
-}
-
-.menu-drink {
-    font-size: 15px;
-}
-
-#drinks .menu-item {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-#drinks .menu-item p:nth-child(2) {
-    grid-area: 2/1/3/3;
-}
-
-#drinks .menu-item p:nth-child(3) {
-    text-align: right;
-}
-
-#drinks .menu-item p:nth-child(4) {
-    grid-area: 3/1/4/2;
-    font-size: 9px;
-    line-height: 2;
-}
-
-#drinks .menu-item p:nth-child(5) {
-    grid-area: 3/2/4/3;
-    font-size: 9px;
-    line-height: 2;
-}
-
-#business-lunch-2 {
-    grid-area: auto /span 2;
-}
-
-#business-lunch-2 p:nth-child(2) {
-    font-size: 20px;
-}
-
-.beige-bg {
-    background-color: #FFFFF0;
-    padding: 70px;
-    text-align: center;
-    line-height: .5;
-    font-family: var(--main-font), sans-serif;
-}
-
-.beige-bg h2 {
-    font-size: 25px;
-}
-
-.beige-bg h3 {
-    font-size: 13px;
-}
-
-.beige-bg button {
-    padding: 8px 50px;
-    background-color: #660810;
-    color:#FFFFFF;
-    font-size: 15px;
-    border: none;
-    border-radius: 10px;
-    font-family: var(--main-font), sans-serif;
-}
-
-/* ===== MAIN STYLING (HOME PAGE)===== */
+/* ===== MAIN STYLING (HOME PAGE) ===== */
 
 main #home-main {
     display: grid;
@@ -482,7 +270,23 @@ main #home-main {
 }
 
 
+
 /* ===== MAIN STYLING (HOME PAGE: PROMOTIONS)===== */
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes carouselAnim {
+    0% {opacity: 0; transform: translateX(-100px); display: none;} 
+    100% {opacity: 1; transform: translateX(0px)}
+}
+
+@keyframes offersAnim {
+    0% {opacity: 0; transform: scale(1.1)} 
+    100% {opacity: 1; transform: scale(1)}
+}
+
+/* ====================== */
+
 
 #promotions {
     background-color: #0A0A0A;
@@ -584,16 +388,6 @@ main #home-main {
     background-color: #717171;
 }
 
-@keyframes carouselAnim {
-    0% {opacity: 0; transform: translateX(-100px); display: none;} 
-    100% {opacity: 1; transform: translateX(0px)}
-}
-
-@keyframes offersAnim {
-    0% {opacity: 0; transform: scale(1.1)} 
-    100% {opacity: 1; transform: scale(1)}
-}
-
 #view-menu-btn {
     margin: 1em;
     width: 5.8em;
@@ -604,6 +398,8 @@ main #home-main {
     border: none;
     cursor: pointer;
 }
+
+
 
 /* ===== MAIN STYLING (HOME PAGE: REVIEWS)===== */
 
@@ -737,6 +533,7 @@ main #home-main {
 }
 
 
+
 /* ===== MAIN STYLING (HOME PAGE: DELIVERY)===== */
 
 #delivery {
@@ -792,19 +589,21 @@ main #home-main {
     gap: 1.5em;
 }
 
- #delivery img {
+#delivery img {
     height: 1.8em;
     display: flex;
- }
+}
 
- #deliveroo-delivery img{
+#deliveroo-delivery img{
     height: 4em;
- }
+}
 
- #noon-delivery img {
+#noon-delivery img {
     height: 2.5em;
- }
+}
 
+
+ 
 /* ===== MAIN STYLING (HOME PAGE: RESERVATION)===== */
 
 #book {
@@ -817,7 +616,6 @@ main #home-main {
     color: #FFFFF0;
     text-align: center;
     background-attachment: fixed;
-    
 }
 
 #book h1 {
@@ -870,7 +668,258 @@ main #home-main {
     margin: 1em 0;
 }
 
-/* ===== ABOUT US STYLING ===== */
+
+
+/* =============== KANTO MENU PAGE =============== */
+
+
+/* ===== HEADER STYLING (MENU PAGE) ===== */
+
+#menu-bg {
+    background-image: url(website-media/Menu/reviews-menu-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#menu-bg .nav-bar {
+    background: #000000;
+}
+
+.title {
+    margin: 20px 0 0 0;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 1.0;
+    font-family: var(--main-font), sans-serif;
+    background: black;
+}
+
+.title h1 {
+    padding: 3em 0 0 0;
+    font-size: 25px;
+}
+
+.title h2 {
+    margin: 5px 0 0 0;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.btn-container {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background: black;
+}
+
+.btn-container button {
+    padding: 5px 15px;
+    background-color: #660810;
+    color:#FFFFFF;
+    font-size: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--secondary-font), sans-serif;
+}
+
+.btn-container button:hover, .beige-bg button:hover {
+    background-color: #350000;
+    box-shadow: 0 0 8px 2px #801622;
+    transform: scale(1.03);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+hr {
+    margin: 0;
+}
+
+
+
+/* ===== MAIN STYLING (MENU PAGE) ===== */
+
+.menu-display-section {
+    background: linear-gradient(#000000ac 1%, transparent);
+    padding: 20px;
+    font-family: var(--main-font), sans-serif;
+    color:#FFFFFF;
+}
+
+.menu-group, .sub-menu-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.sub-menu-group, .sub-menu-group h2, h3 {
+    grid-area: auto/span 2;
+}
+
+.sub-menu-group h3 {
+    margin: 0;
+    font-size: 15px;
+    align-self:first baseline;
+}
+
+.menu-item {
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-auto-flow: dense;
+    grid-row-gap: 10px; 
+    column-gap: 10px;
+    border: solid 1px #B93B41;
+    line-height: 1.5;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    transition: 0.1s ease-in;
+    box-shadow: 0 0 30px 3px #3a0a05;
+    background-color: #3a0a05;
+    border: solid 2px #fffff0;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    grid-area: 1/span 3;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.menu-item p {
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+.menu-item b {
+    text-transform: uppercase;
+}
+
+.menu-item i {
+    color:hsl(0, 0%, 67%)
+}
+
+.menu-item p:nth-child(2) {
+    grid-area: 2 /span 2;
+    align-self:first baseline;
+}
+
+.menu-item p:nth-child(3) {
+    text-align: right;
+}
+
+.menu-item p:nth-child(4) {
+    grid-area: 3 /span 3;
+    justify-self: top;
+    font-size: 12px;
+    line-height: 1.5;
+    color:rgba(255, 255, 255, 0.5)
+}
+
+.menu-item p:nth-child(5) {
+    grid-area: 4 /span 3;
+    justify-self: top;
+    color:rgba(255, 255, 255, 0.5)
+}
+
+
+
+/* ===== MAIN STYLING (MENU PAGE: DRINKS) ===== */
+
+.menu-drink {
+    font-size: 15px;
+}
+
+#drinks .menu-item {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#drinks .menu-item p:nth-child(2) {
+    grid-area: 2/1/3/3;
+}
+
+#drinks .menu-item p:nth-child(3) {
+    text-align: right;
+}
+
+#drinks .menu-item p:nth-child(4) {
+    grid-area: 3/1/4/2;
+    font-size: 9px;
+    line-height: 2;
+}
+
+#drinks .menu-item p:nth-child(5) {
+    grid-area: 3/2/4/3;
+    font-size: 9px;
+    line-height: 2;
+}
+
+
+
+/* ===== MAIN STYLING (MENU PAGE: PROMOTIONS) ===== */
+
+#business-lunch {
+    margin-bottom: 0;
+}
+
+#business-lunch-2 {
+    grid-area: auto /span 2;
+}
+
+#business-lunch-2 p:nth-child(2) {
+    font-size: 20px;
+}
+
+
+
+/* ===== MAIN STYLING (MENU PAGE: DELIVERY) ===== */
+
+.beige-bg {
+    background-color: #FFFFF0;
+    padding: 70px;
+    text-align: center;
+    line-height: .5;
+    font-family: var(--main-font), sans-serif;
+}
+
+.beige-bg h2 {
+    font-size: 25px;
+}
+
+.beige-bg h3 {
+    font-size: 13px;
+}
+
+.beige-bg button {
+    padding: 8px 50px;
+    background-color: #660810;
+    color:#FFFFFF;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--main-font), sans-serif;
+}
+
+
+
+/* =============== KANTO ABOUT US PAGE =============== */
+
+
+/* ===== HEADER STYLING (ABOUT US) ===== */
+
 .black-bg {
     background: #0A0A0A;
     color:#FFFFFF;
@@ -926,6 +975,10 @@ main #home-main {
     opacity: 0.7;
     color: #FFFFF0;
 }
+
+
+
+/* ===== MAIN STYLING (ABOUT US: WHY WE STARTED & LOGO STORY) ===== */
 
 .why-we-started, .sushi-images, .logo-story {
     padding: 30px;
@@ -989,7 +1042,29 @@ main #home-main {
     letter-spacing: 0.5px;
 }
 
-/* ===== SUPPORT STYLING ===== */
+
+
+/* =============== KANTO SUPPORT PAGE =============== */
+
+
+/* ===== MAIN STYLING (SUPPORT: FAQ) ===== */
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes showAnswer {
+    0% {
+        opacity: 0.5;
+        transform: translateY(-5px);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* ====================== */
+
+
 #support-bg {
     background: none;
 }
@@ -1036,7 +1111,6 @@ main #home-main {
     padding: 10px;
     margin-bottom: 20px;
 }
-
 
 .question {
     display: flex;
@@ -1089,17 +1163,6 @@ main #home-main {
     display: block;
 }
 
-@keyframes showAnswer {
-    0% {
-        opacity: 0.5;
-        transform: translateY(-5px);
-    } 
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
 .minus-icon {
     display: none;
 }
@@ -1111,6 +1174,10 @@ main #home-main {
 .show-text .minus-icon {
     display: inline;
 }
+
+
+
+/* ===== MAIN STYLING (SUPPORT: WEBSITE FEEDBACK) ===== */
 
 #feedback {
     background-image: url(website-media/Support/Contact\ Form\ BG\ Mobile.png);
@@ -1204,7 +1271,12 @@ main #home-main {
     background: #31070B;
 }
 
-/* ===== DIRECTIONS STYLING ===== */
+
+
+/* =============== KANTO DIRECTIONS PAGE =============== */
+
+
+/* ===== HEADER STYLING (HOME PAGE) ===== */
 
 #directions-header {
     background: transparent;
@@ -1276,7 +1348,11 @@ main #home-main {
     font-family: var(--main-font), sans-serif;
 }
 
-/* ===== FOOTER STYLING ===== */
+
+
+/* =============== KANTO MOBILE FOOTER =============== */
+
+
 footer {
     background-color: #000000;
     font-family: var(--main-font), sans-serif;
@@ -1344,10 +1420,18 @@ b {
 }
 
 
-/* ===== MEDIA QUERIES ===== */
+
+/* =============== MEDIA QUERIES =============== */
+
+
+/* =============== TABLET =============== */
+
 
 @media (min-width: 800px) {
-    /* === FOR NAVIGATION LINKS === */
+
+    /* =============== KANTO TABLET NAVIGATION =============== */
+
+
     .nav-links {
         position: static;
         max-height: none;
@@ -1388,113 +1472,12 @@ b {
         display: none;
     }
 
-    /* === FOR MAIN STYLING (MENU PAGE) === */
-    .title {
-        line-height: 1.2;
-    }
+    
 
-    .title h1 {
-        font-size: 50px;
-    }
+    /* =============== KANTO HOME PAGE =============== */
 
-    .title h2 {
-        font-size: 20px;
-    }
 
-    .btn-container button {
-        padding: 10px 20px;
-        font-size: 15px;
-    }
-
-    .menu-group, .sub-menu-group {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-    }
-
-    .sub-menu-group, .sub-menu-group h2, h3 {
-        grid-area: auto/span 4;
-        font-size: 35px;
-    }
-
-    .sub-menu-group h2 {
-        margin: 5px 0;
-    }
-
-    .sub-menu-group h3 {
-        font-size: 20px;
-        font-weight: 100;
-    }
-
-    .menu-item img {
-        aspect-ratio: 4 / 4;
-    }
-
-    .menu-item p {
-        font-size: 0.9rem;
-    }
-
-    .menu-item p:nth-child(4), .menu-item p:nth-child(5) {
-        font-size: 0.9rem;
-    }
-
-    #drinks .menu-item p:nth-child(4) {
-        font-size: 10px;
-    }
-
-    #drinks .menu-item p:nth-child(5) {
-        font-size: 10px;
-    }
-
-    #business-lunch-2 {
-        grid-area: auto /span 4;
-        padding: 15px;
-    }
-
-    #business-lunch-2 img {
-        aspect-ratio: 3 / 2;
-        grid-row: 1 / 5;
-    }
-
-    #business-lunch-2 p:nth-child(2) {
-        font-size: 30px;
-        grid-area: auto /span 2;
-    }
-
-    #business-lunch-2 p:nth-child(3) {
-        font-size: 25px;
-    }
-
-    #business-lunch-2 p:nth-child(4) {
-        font-size: 20px;
-    }
-
-    #business-lunch-2 p:nth-child(5) {
-        font-size: 18px;
-    }
-
-    .beige-bg {
-        background-color: #FFFFF0;
-        padding: 150px;
-        text-align: center;
-        line-height: .5;
-        font-family: var(--main-font), sans-serif;
-    }
-
-    .beige-bg h2 {
-        margin-top: 0;
-        font-size: 40px;
-    }
-
-    .beige-bg h3 {
-        font-size: 20px;
-    }
-
-    .beige-bg button {
-        padding: 10px 60px;
-        font-size: 20px;
-    }
-
-    /* === FOR HEADER STYLING (HOME PAGE) === */
+    /* ===== HEADER STYLING (HOME PAGE) ===== */
 
     .overlay-cont img {
         width: 14em;
@@ -1515,6 +1498,8 @@ b {
     .bg-img {
         height: 55em;
     }
+
+
 
     /* ===== MAIN STYLING (HOME PAGE: PROMOTIONS)===== */
 
@@ -1569,6 +1554,8 @@ b {
         width: 7.1em;
         height: 1.8em;
     }
+
+
 
     /* ===== MAIN STYLING (HOME PAGE: REVIEWS)===== */
 
@@ -1637,6 +1624,8 @@ b {
         font-size: 2em;
         height: 2em;
     }
+
+
 
     /* ===== MAIN STYLING (HOME PAGE: DELIVERY)===== */
 
@@ -1707,8 +1696,10 @@ b {
         opacity: 0.6;
     }
 
-    /* ===== MAIN STYLING (HOME PAGE: RESERVATION)===== */
 
+
+    /* ===== MAIN STYLING (HOME PAGE: RESERVATION)===== */
+    
     #book {
         background-image: url(website-media/Home/reservation/reserve-bg-tablet.png);
     }
@@ -1759,7 +1750,141 @@ b {
         justify-self: center;
     }
 
-    /* ===== ABOUT US STYLING ===== */
+
+
+    /* =============== KANTO MENU PAGE =============== */
+
+
+    /* ===== HEADER STYLING (MENU PAGE) ===== */
+
+    .title {
+        line-height: 1.2;
+    }
+
+    .title h1 {
+        font-size: 50px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .btn-container button {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+
+
+    /* ===== MAIN STYLING (MENU PAGE) ===== */
+
+    .menu-group, .sub-menu-group {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .sub-menu-group, .sub-menu-group h2, h3 {
+        grid-area: auto/span 4;
+        font-size: 35px;
+    }
+
+    .sub-menu-group h2 {
+        margin: 5px 0;
+    }
+
+    .sub-menu-group h3 {
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .menu-item img {
+        aspect-ratio: 4 / 4;
+    }
+
+    .menu-item p {
+        font-size: 0.9rem;
+    }
+
+    .menu-item p:nth-child(4), .menu-item p:nth-child(5) {
+        font-size: 0.9rem;
+    }
+
+
+
+    /* ===== MAIN STYLING (MENU PAGE: DRINKS) ===== */
+
+    #drinks .menu-item p:nth-child(4) {
+        font-size: 10px;
+    }
+
+    #drinks .menu-item p:nth-child(5) {
+        font-size: 10px;
+    }
+
+
+
+    /* ===== MAIN STYLING (MENU PAGE: PROMOTIONS) ===== */
+
+    #business-lunch-2 {
+        grid-area: auto /span 4;
+        padding: 15px;
+    }
+
+    #business-lunch-2 img {
+        aspect-ratio: 3 / 2;
+        grid-row: 1 / 5;
+    }
+
+    #business-lunch-2 p:nth-child(2) {
+        font-size: 30px;
+        grid-area: auto /span 2;
+    }
+
+    #business-lunch-2 p:nth-child(3) {
+        font-size: 25px;
+    }
+
+    #business-lunch-2 p:nth-child(4) {
+        font-size: 20px;
+    }
+
+    #business-lunch-2 p:nth-child(5) {
+        font-size: 18px;
+    }
+
+
+
+    /* ===== MAIN STYLING (MENU PAGE: DELIVERY) ===== */
+
+    .beige-bg {
+        background-color: #FFFFF0;
+        padding: 150px;
+        text-align: center;
+        line-height: .5;
+        font-family: var(--main-font), sans-serif;
+    }
+
+    .beige-bg h2 {
+        margin-top: 0;
+        font-size: 40px;
+    }
+
+    .beige-bg h3 {
+        font-size: 20px;
+    }
+
+    .beige-bg button {
+        padding: 10px 60px;
+        font-size: 20px;
+    }
+
+
+
+    /* =============== KANTO ABOUT US PAGE =============== */
+
+
+    /* ===== HEADER STYLING (ABOUT US) ===== */
+
     #about-us-bg h4 {
         font-size: 15px;
     }
@@ -1772,6 +1897,10 @@ b {
         letter-spacing: 30px;
         font-size: 3em;
     }
+
+
+
+    /* ===== MAIN STYLING (ABOUT US: WHY WE STARTED & LOGO STORY) ===== */
 
     .why-we-started, .sushi-images, .logo-story {
         padding: 30px 50px;
@@ -1872,8 +2001,92 @@ b {
         grid-column: 3;
         grid-row: 2;
     }
+    
 
-    /* ===== DIRECTIONS STYLING ===== */
+
+    /* =============== KANTO SUPPORT PAGE =============== */
+
+
+    /* ===== MAIN STYLING (SUPPORT: FAQ) ===== */
+
+    #questions {
+        background-image: url(website-media/Support/Support\ FAQ\ BG\ 1.png);
+        max-height: 52em;
+        padding-bottom: 10em;
+    }
+
+    #questions h1 {
+        text-align: center;
+        font-size: 3em;
+        margin: 70px 20px 150px;
+    }
+
+    .faq-list {
+        margin: 0 20px;
+    }
+
+    .faq {
+        width: 500px;
+    }
+
+    .question {
+        font-size: 1.2em;
+    }
+
+    .question-btn {
+        font-size: 1em;
+    }
+
+    .answer p {
+        font-size: 0.9em;
+    }
+
+
+
+    /* ===== MAIN STYLING (SUPPORT: WEBSITE FEEDBACK) ===== */
+
+    #feedback {
+        background-image: url(website-media/Support/Contact\ Form\ BG\ 1.png);
+    }
+
+    #feedback h1 {
+        font-size: 3em;
+    }
+
+    #feedback h2 {
+        font-size: 1.1em;
+        padding: 20px 185px;
+    }
+
+    #input-section {
+        flex-direction: row;
+    }
+
+    #input-section div {
+        flex: 1;
+        width: auto;
+    }
+
+    #feedback-comment {
+        padding: 0;
+    }
+
+    #feedback-comment textarea {
+        width: 700px;
+    }
+
+    #feedback form button {
+        width: 150px;
+        height: 50px;
+        font-size: 1.2em;
+    }
+
+
+    
+    /* =============== KANTO DIRECTIONS PAGE =============== */
+
+
+    /* ===== HEADER STYLING (HOME PAGE) ===== */
 
     .directions-sec {
         background-image: url("website-media/Directions/directions-page-bg-tablet.png");
@@ -1920,77 +2133,11 @@ b {
         font-size: 0.8em;
     }
         
-    /* ===== SUPPORT STYLING ===== */
     
-    #questions {
-        background-image: url(website-media/Support/Support\ FAQ\ BG\ 1.png);
-        max-height: 52em;
-        padding-bottom: 10em;
-    }
 
-    #questions h1 {
-        text-align: center;
-        font-size: 3em;
-        margin: 70px 20px 150px;
-    }
+    /* =============== KANTO TABLET FOOTER =============== */
 
-    .faq-list {
-        margin: 0 20px;
-    }
 
-    .faq {
-        width: 500px;
-    }
-
-    .question {
-        font-size: 1.2em;
-    }
-
-    .question-btn {
-        font-size: 1em;
-    }
-
-    .answer p {
-        font-size: 0.9em;
-    }
-
-    #feedback {
-        background-image: url(website-media/Support/Contact\ Form\ BG\ 1.png);
-    }
-
-    #feedback h1 {
-        font-size: 3em;
-    }
-
-    #feedback h2 {
-        font-size: 1.1em;
-        padding: 20px 185px;
-    }
-
-    #input-section {
-        flex-direction: row;
-    }
-
-    #input-section div {
-        flex: 1;
-        width: auto;
-    }
-
-    #feedback-comment {
-        padding: 0;
-    }
-
-    #feedback-comment textarea {
-        width: 700px;
-    }
-
-    #feedback form button {
-        width: 150px;
-        height: 50px;
-        font-size: 1.2em;
-    }
-
-    /* ===== FOOTER STYLING ===== */
     .more-info {
         margin: 10px 30px;
         grid-template-columns: 1fr 1fr 1fr;
@@ -2035,10 +2182,18 @@ b {
         grid-column: 3;
     }
 }
-    
+
+
+
+/* =============== DESKTOP =============== */
 
 @media (min-width: 1280px) {
-    /* === FOR NAVIGATION LINKS === */
+    
+    /* =============== KANTO HOME PAGE =============== */
+    
+
+    /* ===== HEADER STYLING (HOME PAGE) ===== */
+
     .header-logo {
         width: auto;
         height: 30px;
@@ -2053,79 +2208,6 @@ b {
         font-size: 15px;
     }
     
-    /* === FOR MAIN STYLING (MENU PAGE) === */
-    .btn-container {
-        gap: 20px;
-    }
-
-    .btn-container button {
-        padding: 10px 30px;
-        font-size: 18px;
-    }
-
-    .menu-display-section {
-        padding: 30px;
-    }
-
-    .menu-group, .sub-menu-group {
-        grid-template-columns: repeat(5, 1fr);
-    }
-
-    .sub-menu-group, .sub-menu-group h2, h3 {
-        grid-area: auto/span 5;
-    }
-
-    .sub-menu-group h2 {
-        margin: 10px 0;
-    }
-
-    .menu-item img {
-        aspect-ratio: 3 / 2;
-    }
-
-    #drinks .menu-item p:nth-child(4) {
-        font-size: 12px;
-    }
-
-    #drinks .menu-item p:nth-child(5) {
-        font-size: 12px;
-    }
-
-    #business-lunch-2 {
-        grid-area: auto;
-    }
-
-    #business-lunch-2 img {
-        grid-row: auto;
-    }
-
-    #business-lunch-2 p:nth-child(2) {
-        font-size: 0.9rem;
-        grid-area: auto /span 2;
-    }
-
-    #business-lunch-2 p:nth-child(3) {
-        font-size: 0.9rem;
-    }
-
-    #business-lunch-2 p:nth-child(4) {
-        font-size: 0.9rem;
-    }
-
-    #business-lunch-2 p:nth-child(5) {
-        justify-self: top;
-        font-size: 0.9rem;
-    }
-
-    .beige-bg h2 {
-        font-size: 50px;
-    }
-
-    .beige-bg button {
-        margin: 10px;
-        padding: 10px 60px;
-        font-size: 25px;
-    }
 
 
     /* === FOR HEADER STYLING (HOME PAGE) === */
@@ -2256,6 +2338,8 @@ b {
         left: 10%;
     }
 
+
+
     /* ===== MAIN STYLING (HOME PAGE: REVIEWS)===== */
 
     #reviews h1 {
@@ -2310,6 +2394,8 @@ b {
         transition: 0.2s ease;
     }
 
+
+
     /* ===== MAIN STYLING (HOME PAGE: DELIVERY)===== */
 
     .supported-deliveries a:hover {
@@ -2336,6 +2422,8 @@ b {
         text-shadow: 3px -5px 5px rgba(0, 0, 0, 0.256);
         line-height: 1.5em;
     }
+
+
 
     /* ===== MAIN STYLING (HOME PAGE: RESERVATION)===== */
 
@@ -2372,7 +2460,110 @@ b {
         transition: 0.2s ease;
     }
 
-    /* ===== ABOUT US STYLING ===== */
+
+
+    /* =============== KANTO MENU PAGE =============== */
+
+
+     /* ===== HEADER STYLING (MENU PAGE) ===== */
+
+    .btn-container {
+        gap: 20px;
+    }
+
+    .btn-container button {
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+
+
+
+    /* ===== MAIN STYLING (MENU PAGE) ===== */
+
+    .menu-display-section {
+        padding: 30px;
+    }
+
+    .menu-group, .sub-menu-group {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .sub-menu-group, .sub-menu-group h2, h3 {
+        grid-area: auto/span 5;
+    }
+
+    .sub-menu-group h2 {
+        margin: 10px 0;
+    }
+
+    .menu-item img {
+        aspect-ratio: 3 / 2;
+    }
+
+
+
+    /* ===== MAIN STYLING (MENU PAGE: DRINKS) ===== */
+
+
+    #drinks .menu-item p:nth-child(4) {
+        font-size: 12px;
+    }
+
+    #drinks .menu-item p:nth-child(5) {
+        font-size: 12px;
+    }
+
+    #business-lunch-2 {
+        grid-area: auto;
+    }
+
+
+
+    /* ===== MAIN STYLING (MENU PAGE: PROMOTIONS) ===== */
+
+    #business-lunch-2 img {
+        grid-row: auto;
+    }
+
+    #business-lunch-2 p:nth-child(2) {
+        font-size: 0.9rem;
+        grid-area: auto /span 2;
+    }
+
+    #business-lunch-2 p:nth-child(3) {
+        font-size: 0.9rem;
+    }
+
+    #business-lunch-2 p:nth-child(4) {
+        font-size: 0.9rem;
+    }
+
+    #business-lunch-2 p:nth-child(5) {
+        justify-self: top;
+        font-size: 0.9rem;
+    }
+
+
+
+    /* ===== MAIN STYLING (MENU PAGE: DELIVERY) ===== */
+
+    .beige-bg h2 {
+        font-size: 50px;
+    }
+
+    .beige-bg button {
+        margin: 10px;
+        padding: 10px 60px;
+        font-size: 25px;
+    }
+
+
+
+    /* =============== KANTO ABOUT US PAGE =============== */
+
+
+    /* ===== HEADER STYLING (ABOUT US) ===== */
+
     #about-us-bg {
         background-size: cover;
     }
@@ -2390,6 +2581,10 @@ b {
         font-size: 4em;
     }
 
+
+
+    /* ===== MAIN STYLING (ABOUT US: WHY WE STARTED & LOGO STORY) ===== */
+
     .why-we-started {
         padding: 30px 20em;
     } 
@@ -2405,37 +2600,13 @@ b {
         margin: 0 2em;
     }
 
-    /* ===== DIRECTIONS STYLING ===== */
 
-    .directions-sec {
-        background-image: url("website-media/Directions/directions-page-bg-desktop.png");
-        background-position: center;
-    }
-    
-    .directions-sec .header-desc p {
-        margin: 0.5em 0 1em 0;
-    }
 
-    .loc-details{
-        max-width: 80%;
-    }
+    /* =============== KANTO SUPPORT PAGE =============== */
 
-    .loc-details h3{
-        font-size: 2.5em;
-    }
 
-    .loc-details p{
-        font-size: 1em;
-        line-height: 1.5em;
-    }
+    /* ===== MAIN STYLING (SUPPORT: FAQ) ===== */
 
-    .loc-details .loc-maps {
-        min-height: 25.5vw;
-        min-width: 50vw;
-    }
-
-    /* ===== SUPPORT STYLING ===== */
-    
     #questions {
         background-image: url(website-media/Support/Support\ FAQ\ BG\ 1.png);
         max-height: 75em;
@@ -2467,6 +2638,10 @@ b {
         margin: 10px;
     }
 
+
+
+    /* ===== MAIN STYLING (SUPPORT: WEBSITE FEEDBACK) ===== */
+
     #feedback h1 {
         font-size: 4em;
     }
@@ -2477,7 +2652,42 @@ b {
         line-height: 1.5;
     }
 
-    /* === FOR FOOTER STYLING === */
+
+
+    /* =============== KANTO DIRECTIONS PAGE =============== */
+
+    .directions-sec {
+        background-image: url("website-media/Directions/directions-page-bg-desktop.png");
+        background-position: center;
+    }
+    
+    .directions-sec .header-desc p {
+        margin: 0.5em 0 1em 0;
+    }
+
+    .loc-details{
+        max-width: 80%;
+    }
+
+    .loc-details h3{
+        font-size: 2.5em;
+    }
+
+    .loc-details p{
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .loc-details .loc-maps {
+        min-height: 25.5vw;
+        min-width: 50vw;
+    }
+
+    
+
+    /* =============== KANTO DESKTOP FOOTER =============== */
+
+
     .more-info {
         margin: 30px 70px;
         grid-row-gap: 1.2em;
